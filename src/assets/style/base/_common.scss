@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+/* Custom */
+@include placeholder {
+    opacity: 1;
+    text-overflow: ellipsis;
+    text-indent: 0px;
+    @include transition(text-indent, $effect: ease);
+}
+
+@include plhdr(":focus") {
+    text-indent: 500px;
+}
+
+* {
+    @include box-sizing (border-box);
+    &:before, &:after {
+        @include box-sizing (border-box);
+    }
+}
+
+html {
+    /*font-size: 16px;*/
+    min-width: 320px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    width: 100%;
+}
+
+body {
+    @include f();
+    //background-color: c();
+    background-color: #e6c89d;
+    color: #000;
+    /*font-size: 16px;*/
+    padding: 0;
+    text-rendering: auto;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    @include transition(color);
+
+    &:hover {
+        text-decoration: underline;
+    }
+    &:focus {
+        outline: 1px auto -webkit-focus-ring-color;
+        outline: thin dotted;
+        /*outline: 0px solid transparent;
+        outline: none;*/
+    }
+}
+
+input,
+button,
+select,
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+figure {
+    margin: 0
+}
+img {
+    vertical-align: middle;
+}
+
+// Extras
+// -- Highlight Color Customization
+@include highlight-color {
+    color: #fff;
+    background-color: #000;
+    /*background-color: transparent;*/
+    text-shadow: none;
+}
+
+img {
+    @include highlight-color-append {
+        color: #fff;
+        background: transparent;
+    }
+}
+
+/*@include hl-color ("img") {
+    color: #fff;
+    background: transparent;
+}*/
+
+:focus {
+
+}
+
+@include webkit-scrollbar($scrollbar-track: #fff);

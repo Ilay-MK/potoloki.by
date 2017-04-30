@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+%bg-cover {
+    background-position: center center; /*50% 50%*/
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+	   -moz-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+}

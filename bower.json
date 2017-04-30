@@ -1,0 +1,26 @@
+{
+  "name": "potoloki.com",
+  "description": "potoloki.by - Landing Page. Sale and installation of stretch ceilings.",
+  "main": "index.html",
+  "authors": [
+    "Ilya Purouski"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize.css": "*",
+    "animate.css": "^3.5.1",
+    "protonet/jquery.inview": "^1.1.2",
+    "jquery.maskedinput": "jquery-maskedinput#^1.4.1",
+    "fancybox": "^2.1.5"
+  },
+  "devDependencies": {}
+}
