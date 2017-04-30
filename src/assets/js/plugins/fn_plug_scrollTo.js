@@ -16,9 +16,9 @@ var fn_plug_scrollTo = function (target, speed, offsetTop) {
     /* значения по умолчанию */
     var dflt_target    = ".scrollTo",
         dflt_speed     = 800,
-        dflt_offsetTop = -51,
+        dflt_offsetTop = -51;
 
-    if (.scrollTo !== undefined ) {
+    if (target !== undefined ) {
         target = dflt_target;
     }
     if (speed !== undefined ) {
