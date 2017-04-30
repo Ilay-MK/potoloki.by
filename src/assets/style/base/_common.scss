@@ -20,18 +20,16 @@
 }
 
 html {
-    /*font-size: 16px;*/
+    font-size: 1px;
     min-width: 320px;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     width: 100%;
 }
 
 body {
-    @include f();
-    //background-color: c();
-    background-color: #e6c89d;
+    background-color: #fff;
     color: #000;
-    /*font-size: 16px;*/
+    font-size: 16px;
     padding: 0;
     text-rendering: auto;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
