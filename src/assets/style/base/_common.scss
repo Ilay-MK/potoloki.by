@@ -123,7 +123,13 @@ h6, .h6 {
     background: transparent;
 }*/
 
+/* Extras */
+
 :focus {
+
+}
+
+@include highlight-color {
 
 }
 
