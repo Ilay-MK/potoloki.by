@@ -1,15 +1,16 @@
 "use strict";
 
-/// -=[ fn_plug_scrollTo ]=-.
-/// Скроллинг до места с заданной скоростью и отступом.
-/// @access public.
-/// @type function.
-/// @prop - target {string} - объект, к которому применяется данная функция
+/// @name: -=[ fn_plug_scrollTo ]=-.
+/// @description: Скроллинг до места с заданной скоростью и отступом.
+/// @require: require.
+/// @access: public.
+/// @type: function.
+/// @prop: target {string} - объект, к которому применяется данная функция
 /// (класс, идентификатор или селектор).
-/// @prop - speed {integer} (ms) - скорость прокрутки (время прокрутки).
-/// @prop - offsetTop {integer} (px) - отступ до объекта (цели),
+/// @prop: speed {integer} (ms) - скорость прокрутки (время прокрутки).
+/// @prop: offsetTop {integer} (px) - отступ до объекта (цели),
 /// расстояние на котором нужно остановиться.
-/// @return empty.
+/// @return: empty.
 
 var fn_plug_scrollTo = function (target, speed, offsetTop) {
 

@@ -1,11 +1,13 @@
 "use strict";
 
-/// -=[ fn_plugins_fancybox ]=-.
-/// Объявление fancybox плагина с заданными параметрами или без.
-/// @access public.
-/// @type function.
-/// @prop - empty.
-/// @return empty.
+/// @name: -=[ fn_plugins_fancybox ]=-.
+/// @description: Объявление fancybox плагина с заданными параметрами или без.
+/// @require: jQuery 1.7+.
+/// @require: jquery.mousewheel^3.0.6.
+/// @access: public.
+/// @type: function.
+/// @prop: empty.
+/// @return: empty.
 
 var fn_plugins_fancybox = function () {
     $(".fancybox").fancybox({
