@@ -5,4 +5,8 @@
 .btn {
     @include transition();
     white-space: pre-line;
+
+    &:active:focus {
+        @include clear-edging();
+    }
 }
