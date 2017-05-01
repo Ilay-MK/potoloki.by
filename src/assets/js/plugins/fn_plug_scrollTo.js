@@ -10,7 +10,7 @@
 /// @prop: speed {integer} (ms) - скорость прокрутки (время прокрутки).
 /// @prop: offsetTop {integer} (px) - отступ до объекта (цели),
 /// расстояние на котором нужно остановиться.
-/// @return: empty.
+/// @return: none.
 
 var fn_plug_scrollTo = function (target, speed, offsetTop) {
 

@@ -6,8 +6,8 @@
 /// @require: jquery.mousewheel^3.0.6.
 /// @access: public.
 /// @type: function.
-/// @prop: empty.
-/// @return: empty.
+/// @prop: none.
+/// @return: none.
 
 var fn_plugins_fancybox = function () {
     $(".fancybox").fancybox({

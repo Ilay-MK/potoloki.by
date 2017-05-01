@@ -7,7 +7,7 @@
 /// @type: function.
 /// @prop: target {string} - объект, к которому применяется данная функция
 /// (класс, идентификатор или селектор).
-/// @return: empty.
+/// @return: none.
 
 var fn_plug_maskedinput = function (target) {
 
