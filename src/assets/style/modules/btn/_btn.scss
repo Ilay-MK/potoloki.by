@@ -3,5 +3,6 @@
 /// @BemEntryName: -=[ btn ]=-.
 /// @description: правила для модуля btn.
 .btn {
+    @include transition();
     white-space: pre-line;
 }
