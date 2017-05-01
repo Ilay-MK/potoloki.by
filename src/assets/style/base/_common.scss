@@ -42,7 +42,7 @@ body {
 a {
     display: inline-block;
     text-decoration: none;
-    @include transition(color);
+    @include transition();
 
     &:hover {
         text-decoration: underline;
