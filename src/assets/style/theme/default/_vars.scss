@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+$color__CuriousBlue     : #4291bd;
+$color__Sunglow         : #fec135;
+$color__Siren           : #663040;
+$color__DimGray         : #6f6f6f;
+$color__Nero            : #1e1e1e;
+/* --- */
+$color__blue            : $color__CuriousBlue;
+$color__yellow          : $color__Sunglow;
+$color__red             : $color__Siren;
+$color__gray            : $color__DimGray;
+$color__black           : $color__Nero;
+
+/* --- */
+
+$company__color_base    : $color__black;
+$company__color_default : $color__gray;
+$company__color_primary : $color__blue;
+$company__color_warning : $color__yellow;
+$company__color_danger  : $color__red;
+
+/// @name: -=[ $company__colors ]=-.
+/// @description: карта фирменных цветов.
+$company__colors: (
+    'base'        : $company__color_base,
+    'default'     : $company__color_default,
+    'primary'     : $company__color_primary,
+    'warning'     : $company__color_warning,
+    'danger'      : $company__color_danger
+);
