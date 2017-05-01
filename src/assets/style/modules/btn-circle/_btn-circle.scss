@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+/// @BemEntryName: -=[ btn-circle ]=-.
+/// @description: круглая кнопка.
+.btn-circle {
+    border-radius: 50%;
+    @include size(100px);
+}
