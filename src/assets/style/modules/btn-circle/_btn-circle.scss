@@ -4,5 +4,6 @@
 /// @description: круглая кнопка.
 .btn-circle {
     border-radius: 50%;
+    text-transform: uppercase;
     @include size(100px);
 }
