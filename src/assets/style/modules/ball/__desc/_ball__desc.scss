@@ -4,6 +4,5 @@
 /// @BemElementName: -=[ desc ]=-.
 /// @description: описание "шаров".
 .ball__desc {
-    @extend .font_second;
-    @extend .font_color_second;
+    @extend .text-desc;
 }
