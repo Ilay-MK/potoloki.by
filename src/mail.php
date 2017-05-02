@@ -18,6 +18,12 @@
         $error = true;
     }*/
 
+    if (!empty($_POST["bsEmail"])) {
+        $name = substr(htmlspecialchars(trim($_POST["bsEmail"])), 0, 255);
+    } /*else {
+        $error = true;
+    }*/
+
     if (!empty($_POST["bsPhone"])) {
         $phone = substr(htmlspecialchars(trim($_POST["bsPhone"])), 0, 50);
     } else {
