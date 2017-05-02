@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+/// @BemEntryName: -=[ reasons ]=-.
+/// @BemElementName: -=[ desc ]=-.
+/// @description: описание причины почему выбирают нас.
+.reasons__desc {
+    @extend .text-desc;
+}
