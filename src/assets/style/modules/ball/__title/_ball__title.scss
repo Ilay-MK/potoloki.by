@@ -4,5 +4,5 @@
 /// @BemElementName: -=[ title ]=-.
 /// @description: заголовок "шаров".
 .ball__title {
-    font-weight: 500;
+    @extend .font_title; /* font-weight: 500; */
 }
