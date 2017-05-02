@@ -1,10 +1,16 @@
 @charset "UTF-8";
 
+/// @varName: -=[ rate ]=-.
+/// @description: значение поворота.
+$rate: 45deg;
+
 /// @BemEntryName: -=[ rhombus ]=-.
 /// @description: ромб как фигура.
 .rhombus {
+    background-color: #fff;
     @include bg-cover;
     overflow: hidden;
+    padding: 10px;
     transform-origin: 50% 50%;
-    transform: rotate(45deg);
+    transform: rotate($rate);
 }

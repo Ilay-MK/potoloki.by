@@ -1,9 +1,0 @@
-@charset "UTF-8";
-
-/// @BemEntryName: -=[ rhombus ]=-.
-/// @BemEntryModName: -=[ img ]=-.
-/// @description: ромб для формы.
-.rhombus_img {
-    background-color: #fff;
-    @include size(200px);
-}

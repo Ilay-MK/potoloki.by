@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+/// @BemEntryName: -=[ rhombus ]=-.
+/// @BemElementName: -=[ inner ]=-.
+/// @description: внутренний блок, для выравнивания поворота.
+/// @description: также служащий для обёртки, декоративного оформления.
+.rhombus__inner {
+    overflow: hidden;
+    padding: 10px;
+    transform-origin: 50% 50%;
+    transform: rotate(-$rate);
+}

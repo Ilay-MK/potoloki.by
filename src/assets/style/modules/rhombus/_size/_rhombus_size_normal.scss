@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+/// @BemEntryName: -=[ rhombus ]=-.
+/// @BemEntryModName: -=[ size ]=-.
+/// @BemEntryModValue: -=[ normal ]=-.
+/// @description: большой ромб.
+.rhombus_size_normal {
+    @include size(200px);
+}
