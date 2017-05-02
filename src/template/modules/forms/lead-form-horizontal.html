@@ -1,0 +1,110 @@
+<!--
+    ![ SKETCH ]
+-->
+<!--
+    @name: -=[ .lead-form-horizontal-1 ]=-.
+    @description: горизонтальная лид форма 1.
+    @description: кнопка submit круглая.
+    @prop: имя.
+    @prop: email.
+    @prop: телефон.
+-->
+<!--
+    attribute status invalid validating:
+    ------------------------------------
+    aria-invalid="true"
+-->
+<!--
+    class status validating (.has-feedback):
+    ----------------------------------------
+    .has-success
+    .has-warning
+    .has-error
+-->
+<!--
+    class status validating icon:
+    -----------------------------
+    .glyphicon-warning-sign (warning)
+    .glyphicon-remove (error)
+    .glyphicon-ok (success)
+-->
+<!--
+    status validation text (bsXStatus):
+    -----------------------------------
+    - (успех)
+    - (ошибка)
+-->
+<form class="lead-form-1 form-horizontal" action="./mail.php" method="post">
+    <fieldset>
+
+        <!-- Form Name -->
+        <legend>Заполните</legend>
+
+        <!-- Text input-->
+        <!-- Имя-->
+        <div class="form-group has-feedback form-group-md">
+            <label class="col-md-4 control-label" for="bsName">Ваше имя</label>
+            <div class="col-md-4">
+                <input name="bsName" type="text" placeholder="Ваше имя" class="bsName form-control input-md" aria-describedby="bsNameStatus" />
+                <span class="help-block">Как к Вам обращаться: Оля или Иван Петрович</span>
+                <!-- help blocks -->
+                <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                <span class="bsNameStatus sr-only">(успех)</span>
+            </div>
+        </div>
+
+        <!-- Email input-->
+        <!-- Email -->
+        <div class="form-group has-success has-feedback form-group-md">
+            <label class="col-md-4 control-label" for="bsEmail">Ваш Email</label>
+            <div class="col-md-4">
+                <div class="input-group">
+                    <span class="input-group-addon">@</span>
+                    <input name="bsEmail" type="email" placeholder="Ваш Email" class="bsEmail form-control input-md" aria-describedby="bsEmailStatus" />
+                </div>
+
+                <span class="help-block">Ваша электронная почта</span>
+                <!-- help blocks -->
+                <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+                <span class="bsEmailStatus sr-only">(успех)</span>
+            </div>
+        </div>
+
+        <!-- Tel input-->
+        <!-- Телефон -->
+        <div class="form-group has-feedback form-group-md">
+            <label class="col-md-4 control-label" for="bsPhone">Ваш телефон</label>
+            <div class="col-md-4">
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <!--<i class="fa fa-mobile" aria-hidden="true"></i>-->
+                        <!--<span class="glyphicon glyphicon-phone" aria-hidden="true"></span>-->
+                    </span>
+                    <input name="bsPhone" type="tel" placeholder="Ваш номер телефона" class="bsPhone validating form-control input-md" aria-describedby="bsPhoneStatus" required="required" />
+                </div>
+                <span class="help-block">Для связи с Вами</span>
+                <!-- help blocks -->
+                <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                <span class="bsPhoneStatus sr-only">(успех)</span>
+            </div>
+        </div>
+
+        <!-- Button -->
+        <!-- Submit -->
+        <div class="form-group form-group-md">
+            <label class="col-md-4 control-label" for="bsSubmit">Подобрать варианты</label>
+            <div class="col-md-4">
+                <button name="bsSubmit" class="bsSubmit btn btn-warning btn-circle btn-circle_theme_warning">Подобрать варианты</button>
+            </div>
+        </div>
+
+        <!-- Lable submit -->
+        <!-- Submit -->
+        <p class="help-block small">
+            Решили установить натяжной потолок?
+            Мы поможем решить эту задачу уже сегодня!
+        </p>
+
+    </fieldset>
+</form>
