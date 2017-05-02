@@ -4,6 +4,7 @@
 /// @BemElementName: -=[ inner ]=-.
 /// @description: внутренний блок, для выравнивания поворота.
 /// @description: также служащий для обёртки, декоративного оформления.
+/// @require: $rate.
 .rhombus__inner {
     overflow: hidden;
     padding: 10px;
