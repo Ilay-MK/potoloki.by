@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+/// @BemEntryName: -=[ rhombus ]=-.
+/// @description: ромб как фигура.
+.rhombus {
+    @include bg-cover;
+    overflow: hidden;
+    transform-origin: 50% 50%;
+    transform: rotate(45deg);
+}
