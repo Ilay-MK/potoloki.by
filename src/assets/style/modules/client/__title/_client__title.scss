@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+/// @BemEntryName: -=[ client ]=-.
+/// @BemElementName: -=[ title ]=-.
+/// @description: заголовок-описание.
+.client__title {
+    @extend .font_title;
+}
