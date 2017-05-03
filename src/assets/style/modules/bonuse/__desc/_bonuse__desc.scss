@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+/// @BemEntryName: -=[ bonuse ]=-.
+/// @BemElementName: -=[ desc ]=-.
+/// @description: описание бонуса.
+.bonuse__desc {
+    @extend .text-desc;
+    @extend .font-title;
+}
