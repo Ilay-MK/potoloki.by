@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+/// @BemEntryName: -=[ fa ]=-.
+/// @BemEntryModName: -=[ color ]=-.
+/// @description: цвет иконки.
+.fa_color {
+    color: map-get($colors, "warning");
+}
