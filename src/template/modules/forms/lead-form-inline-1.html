@@ -1,0 +1,85 @@
+<!--
+    ![ SKETCH ]
+-->
+<!--
+    @name: -=[ .lead-form-inline-1 ]=-.
+    @description: лид форма в линию 1.
+    @description: кнопка submit native BS3.
+    @prop: имя.
+    @prop: email.
+    @prop: телефон.
+-->
+<!--
+    attribute status invalid validating:
+    ------------------------------------
+    aria-invalid="true"
+-->
+<!--
+    class status validating (.has-feedback):
+    ----------------------------------------
+    .has-success
+    .has-warning
+    .has-error
+-->
+<!--
+    class status validating icon:
+    -----------------------------
+    .glyphicon-warning-sign (warning)
+    .glyphicon-remove (error)
+    .glyphicon-ok (success)
+-->
+<!--
+    status validation text (bsXStatus):
+    -----------------------------------
+    - (успех)
+    - (ошибка)
+-->
+<form class="lead-form-inline-1 form-inline" action="./mail.php" method="post">
+    <fieldset>
+
+        <!-- Form Name -->
+        <legend>
+            Уточните,
+            <div class="small">
+                условия установки потолка, заполнив форму
+            </div>
+        </legend>
+
+        <!-- Text input-->
+        <!-- Имя-->
+        <div class="form-group has-feedback form-group-md">
+            <label class="control-label sr-only" for="bsName">Ваше имя</label>
+            <input name="bsName" type="text" placeholder="Ваше имя" class="bsName form-control input-md" aria-describedby="bsNameStatus" />
+            <span class="help-block sr-only">Как к Вам обращаться: Оля или Иван Петрович</span>
+            <!-- help blocks -->
+            <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+            <span class="bsNameStatus sr-only">(успех)</span>
+        </div>
+
+        <!-- Tel input-->
+        <!-- Телефон -->
+        <div class="form-group has-feedback form-group-md">
+            <label class="control-label sr-only" for="bsPhone">Ваш телефон</label>
+            <div class="input-group">
+                <span class="input-group-addon">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <!--<i class="fa fa-mobile" aria-hidden="true"></i>-->
+                    <!--<span class="glyphicon glyphicon-phone" aria-hidden="true"></span>-->
+                </span>
+                <input name="bsPhone" type="tel" placeholder="Ваш номер телефона" class="bsPhone validating form-control input-md" aria-describedby="bsPhoneStatus" required="required" />
+            </div>
+            <span class="help-block sr-only">Для связи с Вами</span>
+            <!-- help blocks -->
+            <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+            <span class="bsPhoneStatus sr-only">(успех)</span>
+        </div>
+
+        <!-- Button -->
+        <!-- Submit -->
+        <div class="form-group form-group-md">
+            <label class="control-label sr-only" for="bsSubmit">Подобрать варианты</label>
+            <button name="bsSubmit" class="bsSubmit btn btn-warning">Подобрать варианты</button>
+        </div>
+
+    </fieldset>
+</form>
