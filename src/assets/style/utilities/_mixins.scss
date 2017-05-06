@@ -140,22 +140,22 @@
         $class: $minWidth;
 
         @if $class == xs {
-            @media (max-width: 767px) {
+            @media (max-width: map-get($breakpoints, "xs-max")) {
                 @content;
             }
         }
         @else if $class == sm {
-            @media (min-width: 768px) {
+            @media (min-width: map-get($breakpoints, "sm-min")) {
                 @content;
             }
         }
         @else if $class == md {
-            @media (min-width: 992px) {
+            @media (min-width: map-get($breakpoints, "md-min")) {
                 @content;
             }
         }
         @else if $class == lg {
-            @media (min-width: 1200px) {
+            @media (min-width: map-get($breakpoints, "lg-min")) {
                 @content;
             }
         }
