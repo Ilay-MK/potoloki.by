@@ -6,5 +6,10 @@
 /// @BemElementModValue: -=[ call]=-.
 /// @description: мод item'а контактного блока заказа звонка.
 .contacts__item_order_call {
-    color: scotch-color-level('primary', 2);
+    /*color: scotch-color-level('primary', 2);*/
+
+    /* переписать по BEM */
+    .btn {
+        text-decoration: underline;
+    }
 }
