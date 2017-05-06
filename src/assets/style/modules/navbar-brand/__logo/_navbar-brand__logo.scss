@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+/// @BemEntryName: -=[ navbar-brand ]=-.
+/// @BemElementName: -=[ logo ]=-.
+/// @description: логотип.
+.navbar-brand__logo {
+    border-right-color: scotch-color-level('default', 8);
+    border-right-style: solid;
+    border-right-width: 1px;
+    display: inline-block !important;
+    height: 100%;
+    padding-right: 20px;
+}
