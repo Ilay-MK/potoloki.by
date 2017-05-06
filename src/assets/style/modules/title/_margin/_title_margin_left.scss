@@ -5,7 +5,6 @@
 /// @BemEntryModValue: -=[ left ]=-.
 /// @description: мод title с отступом слева (когда color-line слева).
 .title_margin_left {
-    text-align: left;
 
     /// @name: -=[ breakpoint ]=-;
     /// @description: ;
@@ -14,5 +13,6 @@
     @include breakpoint(md) {
         margin-bottom: 41px;
         margin-left: 20px;
+        text-align: left;
     }
 }
