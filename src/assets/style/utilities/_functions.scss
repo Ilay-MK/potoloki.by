@@ -1,2 +1,49 @@
 @charset "UTF-8";
 
+/* ------ */
+/* COLORS */
+/* ------ */
+
+/// @name: -=[ scotch-color ]=-
+/// @description: функция получения цвета из карты цветов
+@function scotch-color($key: 'primary') {
+    @return map-get($colors, $key);
+}
+
+/// @name: -=[ scotch-color-level ]=-
+/// @description: функция получения цвета из карты цветов.
+/// @prop: [ $color-name ] { string } - строковое имя цвета (из карты цветов).
+/// @prop: [ $level ] { integer } - шаг.
+/*
+    // Example:
+    .panel {
+        background-color: scotch-color-level('primary', 2);
+    }
+*/
+@function scotch-color-level($color-name: 'primary', $level: 0) {
+  $color: scotch-color($color-name);
+  $color-base: if($level < 0, black, white);
+
+  @return mix($color-base, $color, $level * $color-interval);
+}
+
+/// @name: -=[ scotch-color-alpha ]=-
+/// @description: функция получения прозрачного цвета.
+/// @prop: [ #name ] { string } - строковое имя цвета (из карты цветов).
+/// @prop: [ $opacity ] { string } - строковое имя прозрачности (из карты цветов).
+/// @prop: [ $opacity ] { integer } - прозрачность.
+/*
+    // Example usage:
+    $button-transparent-color: scotch-color-alpha('primary', 'light');
+    // => rgba(#8e3329, 0.8)
+*/
+@function scotch-color-alpha($name: 'primary', $opacity: 0) {
+    $color: scotch-color($name);
+
+    // Get the named opacity level, if it exists
+    @if map-key-exists($scotch-opacity, $opacity) {
+        $opacity: map-get($scotch-opacity, $opacity);
+    }
+    // Use rgba() to manipulate the color's alpha level
+    @return rgba($color, $opacity);
+}
