@@ -29,3 +29,16 @@ $company__colors: (
     'warning'     : $company__color_warning,
     'danger'      : $company__color_danger
 );
+
+/* ------ */
+/* COLORS */
+/* ------ */
+
+/// @name: -=[ $color-interval ]=-
+/// @description: шаг в изменении цвета.
+$color-interval: 10% !global;
+
+$scotch-opacity: (
+    'light': 0.8, // opacity used with lighter colors
+    'dark': 0.4   // opacity used with darker colors
+);
