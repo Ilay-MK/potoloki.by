@@ -5,4 +5,5 @@
 .contacts {
     height: 80px;
     padding: 15px;
+    @include transition();
 }
