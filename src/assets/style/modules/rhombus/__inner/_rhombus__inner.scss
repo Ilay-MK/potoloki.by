@@ -6,8 +6,5 @@
 /// @description: также служащий для обёртки, декоративного оформления.
 /// @require: $rate.
 .rhombus__inner {
-    overflow: hidden;
-    padding: 10px;
-    transform-origin: 50% 50%;
-    transform: rotate(-$rate);
+    @include rhombus__inner ($rate);
 }

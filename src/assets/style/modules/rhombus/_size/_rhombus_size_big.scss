@@ -5,5 +5,5 @@
 /// @BemEntryModValue: -=[ big ]=-.
 /// @description: большой ромб.
 .rhombus_size_big {
-    @include size(400px);
+    @include rhombus_size_big;
 }

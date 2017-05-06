@@ -3,7 +3,7 @@
 /// @BemEntryName: -=[ rhombus ]=-.
 /// @BemEntryModName: -=[ size ]=-.
 /// @BemEntryModValue: -=[ normal ]=-.
-/// @description: большой ромб.
+/// @description: ромб.
 .rhombus_size_normal {
-    @include size(200px);
+    @include rhombus_size_normal;
 }

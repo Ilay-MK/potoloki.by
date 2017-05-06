@@ -376,3 +376,55 @@
         @content;
     }
 }
+
+
+/* --- */
+/// @BemEntryName: -=[ rhombus ]=-.
+/// @description: ромб как фигура.
+@mixin rhombus ($rate) {
+    background-color: #fff;
+    @include bg-cover;
+    overflow: hidden;
+    padding: 10px;
+    transform-origin: 50% 50%;
+    transform: rotate($rate);
+}
+
+/// @BemEntryName: -=[ rhombus ]=-.
+/// @BemElementName: -=[ inner ]=-.
+/// @description: внутренний блок, для выравнивания поворота.
+/// @description: также служащий для обёртки, декоративного оформления.
+/// @require: $rate.
+@mixin rhombus__inner ($rate) {
+	overflow: hidden;
+    padding: 10px;
+    transform-origin: 50% 50%;
+    transform: rotate(-$rate);
+}
+
+/// @BemEntryName: -=[ rhombus ]=-.
+/// @BemElementName: -=[ inner ]=-.
+/// @BemElementModName: -=[ decorate ]=-.
+/// @BemElementModValue: -=[ form ]=-.
+/// @description: оформление для формы.
+@mixin rhombus__inner_decorate_form {
+	border-color: map-get($colors, "default");
+    border-style: solid;
+    border-width: 1px;
+}
+
+/// @BemEntryName: -=[ rhombus ]=-.
+/// @BemEntryModName: -=[ size ]=-.
+/// @BemEntryModValue: -=[ big ]=-.
+/// @description: большой ромб.
+@mixin rhombus_size_big {
+	@include size(400px);
+}
+
+/// @BemEntryName: -=[ rhombus ]=-.
+/// @BemEntryModName: -=[ size ]=-.
+/// @BemEntryModValue: -=[ normal ]=-.
+/// @description: большой ромб.
+@mixin rhombus_size_normal {
+    @include size(200px);
+}
