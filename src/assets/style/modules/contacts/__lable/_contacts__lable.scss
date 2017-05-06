@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+/// @BemEntryName: -=[ contacts ]=-.
+/// @BemElementName: -=[ lable ]=-.
+/// @description: подпись / заголовок контакта.
+.contacts__lable {
+    font-size: $font-size-base * 0.85;
+    line-height: 1.8em;
+
+    /*display: block;*/
+    /*white-space: nowrap;*/
+}

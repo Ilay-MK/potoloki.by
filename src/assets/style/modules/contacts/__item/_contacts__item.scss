@@ -4,5 +4,6 @@
 /// @BemElementName: -=[ item ]=-.
 /// @description: item блока контактов - блок контакта (телефон/почта...).
 .contacts__item {
-
+    display: inline-block;
+    margin: 0 5px;
 }
