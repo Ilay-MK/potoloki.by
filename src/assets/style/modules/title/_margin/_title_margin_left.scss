@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+/// @BemEntryName: -=[ title ]=-.
+/// @BemEntryModName: -=[ margin ]=-.
+/// @BemEntryModValue: -=[ left ]=-.
+/// @description: мод title с отступом слева (когда color-line слева).
+.title_margin_left {
+    text-align: left;
+
+    /// @name: -=[ breakpoint ]=-;
+    /// @description: ;
+    /// @prop: xs, sm, md, lg (bootstrap);
+    /// @prop: ($maxWidth: x, $minWidth: x, $maxHeight: x, $minHeight: x), где x - число с "px";
+    @include breakpoint(md) {
+        margin-bottom: 41px;
+        margin-left: 20px;
+    }
+}
