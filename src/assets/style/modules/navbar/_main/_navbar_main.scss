@@ -7,6 +7,11 @@
     overflow: hidden;
     @include transition();
 
+    /* преписать по BEM */
+    .btn {
+        border: 1px solid transparent !important;
+    }
+
     /// @name: -=[ breakpoint ]=-;
     /// @description: ;
     /// @prop: xs, sm, md, lg (bootstrap);
