@@ -7,7 +7,7 @@ $(function() {
     /// @require: addClassScrollTop(target, offsetTop, classAdd).
     $.extend(true, $(document).scroll(), $(document).scroll(
         function() {
-            addClassScrollTop ("#navbar_main", 100, 'navbar_main_mini');
+            addClassScrollTop ("#navbar_main", 60, 'navbar_main_mini');
         }
     ));
 });
