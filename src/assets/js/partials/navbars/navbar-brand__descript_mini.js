@@ -7,7 +7,7 @@ $(function() {
     /// @require: addClassScrollTop(target, offsetTop, classAdd).
     $.extend(true, $(document).scroll(), $(document).scroll(
         function() {
-            addClassScrollTop (".navbar-brand__descript", window.globOffsetTop, 'navbar-brand__descript_mini');
+            addClassScrollTop (".navbar-brand", window.globOffsetTop, 'navbar-brand_mini');
         }
     ));
 });
