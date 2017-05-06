@@ -8,5 +8,9 @@
 
 $(document).scroll( function () {
     // TO DO
-    var currScrollPos = +$(document).scrollTop();
+    window.currentScrollPosition = +$(document).scrollTop();
+
+    var currScrollPos = window.currentScrollPosition;
+
+    /* --- */
 });

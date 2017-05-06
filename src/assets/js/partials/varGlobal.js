@@ -1,3 +1,3 @@
 /// @description: Глобальные переменные.
 
-var window.currentScrollPosition = +0;
+window.currentScrollPosition = +0;
