@@ -8,4 +8,12 @@
     border-radius: 5px;
     padding: 15px;
     text-align: center;
+
+    /// @name: -=[ breakpoint ]=-;
+    /// @description: функция-помошник работы с медиа запросами (breakpoints);
+    /// @prop: xs, sm, md, lg (bootstrap);
+    /// @prop: ($maxWidth: x, $minWidth: x, $maxHeight: x, $minHeight: x), где x - число с "px";
+    @include breakpoint(md) {
+        padding: 30px;
+    }
 }
