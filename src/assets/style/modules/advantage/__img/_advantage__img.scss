@@ -10,5 +10,5 @@ $sprite__length: 31px; /* width: 31px; */
 .advantage__img {
     @include bg-cover;
     background-image: url(../img/advantages/advantages__sprite.png);
-    @include size(31px, 27px); /* ! Размеры временные */
+    //@include size(31px, 27px); /* ! Размеры временные */
 }
