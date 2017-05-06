@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+/// @BemEntryName: -=[ contacts ]=-.
+/// @BemEntryModName: -=[ navbar ]=-.
+/// @BemElementModValue: -=[ mini ]=-.
+/// @description: мод - уменьшенная версия блока контактов в навбаре.
+.contacts_navbar_mini {
+    height: 50px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
