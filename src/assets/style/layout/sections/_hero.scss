@@ -3,5 +3,37 @@
 /// @identifiername: -=[ hero ]=-.
 /// @description: 1 экран (секция).
 #hero {
-    padding-top: 100px;
+    background-image: url(../img/hero/bg.jpg);
+    padding-top: 60px;
+    min-height: 700px;
+
+    /// @name: -=[ breakpoint ]=-;
+    /// @description: ;
+    /// @prop: xs, sm, md, lg (bootstrap);
+    /// @prop: ($maxWidth: x, $minWidth: x, $maxHeight: x, $minHeight: x), где x - число с "px";
+    @include breakpoint(sm) {
+        padding-top: 200px;
+    }
+
+    /*.lead-form-wrapper {
+        /// @name: -=[ breakpoint ]=-;
+        /// @description: ;
+        /// @prop: xs, sm, md, lg (bootstrap);
+        /// @prop: ($maxWidth: x, $minWidth: x, $maxHeight: x, $minHeight: x), где x - число с "px";
+        @include breakpoint(md) {
+            @include rhombus(45deg);
+            @include rhombus_size_big;
+        }
+
+        &__inner {
+            /// @name: -=[ breakpoint ]=-;
+            /// @description: ;
+            /// @prop: xs, sm, md, lg (bootstrap);
+            /// @prop: ($maxWidth: x, $minWidth: x, $maxHeight: x, $minHeight: x), где x - число с "px";
+            @include breakpoint(md) {
+                @include rhombus__inner(45deg);
+                @include rhombus__inner_decorate_form;
+            }
+        }
+    }*/
 }
