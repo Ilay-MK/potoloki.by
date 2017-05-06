@@ -6,4 +6,13 @@
     margin-left: -15px;
     margin-right: -15px;
     padding: 15px 0;
+
+    /// @name: -=[ breakpoint ]=-;
+    /// @description: функция-помошник работы с медиа запросами (breakpoints);
+    /// @prop: xs, sm, md, lg (bootstrap);
+    /// @prop: ($maxWidth: x, $minWidth: x, $maxHeight: x, $minHeight: x), где x - число с "px";
+    @include breakpoint($maxWidth: map-get($breakpoints, "sm-max"), $minWidth: map-get($breakpoints, "sm-min")) {
+        display: inline-block;
+        float: none;
+    }
 }
