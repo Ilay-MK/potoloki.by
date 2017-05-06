@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+/// @BemEntryName: -=[ color-line ]=-.
+/// @BemEntryModName: -=[ vertical ]=-.
+/// @BemEntryModValue: -=[ entrymodvalue ]=-.
+/// @description: мод цветной линии - вертикальное расположение.
+.color-line_vertical {
+    left: -30px;
+    margin-left: 0;
+    position: relative;
+    top: -40px;
+    transform: rotate(-90deg);
+}
