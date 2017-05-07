@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+/// @BemEntryName: -=[ form ]=-.
+/// @BemElementName: -=[ btn ]=-.
+/// @BemElementModName: -=[ theme ]=-.
+/// @BemElementModValue: -=[ peek-out ]=-.
+/// @description: мод - тема кнопки формы выглядывающая из формы (за пределы границы).
+.form__btn_theme_peek-out {
+    margin-bottom: -80px;
+    position: relative;
+    top: 20px;
+    z-index: 99;
+}
