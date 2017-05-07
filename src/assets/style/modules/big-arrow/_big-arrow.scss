@@ -10,7 +10,7 @@ $sizeMarginElemRhombusBigArrow: 5px;
 
 /// @varName: -=[ $sizeRhombusBigArrow ]=-.
 /// @description: значение размера большой стрелки, состоящей из ромбов-картинок.
-$sizeRhombusBigArrow: $sizeRhombusElem*3 + $sizeMarginElemRhombusBigArrow*4;
+$sizeRhombusBigArrow: $sizeRhombusElem*3 + $sizeMarginElemRhombusBigArrow*12;
 
 /// @BemEntryName: -=[ big-arrow ]=-.
 /// @require: $sizeRhombusBigArrow.

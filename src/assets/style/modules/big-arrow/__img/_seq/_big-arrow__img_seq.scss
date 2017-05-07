@@ -12,7 +12,7 @@ $big-arrow__imgCount: 6;
 /// @require: $big-arrowSprite__length.
 /// @description: фоновая картинка для преимуществ.
 
-@for $i from 1 through $big-arrow__imgCount {
+@for $i from 0 through $big-arrow__imgCount {
     .big-arrow__img_seq_#{$i} {
         $length: -$big-arrowSprite__length*$i;
         background-position: $length 0 ;

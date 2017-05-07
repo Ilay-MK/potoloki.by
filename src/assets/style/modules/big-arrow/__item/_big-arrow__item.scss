@@ -6,6 +6,7 @@
 /// @require: $sizeRhombusElem.
 /// @description: элемент большой стрелки - ромбики.
 .big-arrow__item {
+    float: left;
     overflow: hidden;
     margin: $sizeMarginElemRhombusBigArrow;
     @include size($sizeRhombusElem);

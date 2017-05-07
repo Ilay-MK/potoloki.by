@@ -12,6 +12,6 @@ $big-arrowSprite__length: $sizeRhombusElem + 1; /* width: 201px; */
 .big-arrow__img {
     @include bg-cover;
     background-image: url(../img/big-arrow/big-arrow__sprite-items_905x150.png);
-    @include size(100%, auto);
-    transform: rotate(-$degRhombus);
+    @include size(100%, 100%);
+    //transform: rotate(-$degRhombus);
 }
