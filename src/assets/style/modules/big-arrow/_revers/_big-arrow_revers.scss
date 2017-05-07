@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+/// @BemEntryName: -=[ big-arrow ]=-.
+/// @BemEntryModName: -=[ revers ]=-.
+/// @require: $degRhombus.
+/// @description: ротэйт в другую сторону - против часовой.
+.big-arrow_revers {
+    transform: rotate(-$degRhombus);
+}
