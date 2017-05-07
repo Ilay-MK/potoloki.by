@@ -17,7 +17,7 @@ $sizeRhombusBigArrow: $sizeRhombusElem*3 + $sizeMarginElemRhombusBigArrow*6;
 /// @require: $degRhombus.
 /// @description: большая стрелка из ромбов-картинок.
 .big-arrow {
-    margin-top: 80px;
+    margin-top: 120px;
     overflow: hidden;
     @include size($sizeRhombusBigArrow);
     transform: rotate($degRhombus);
