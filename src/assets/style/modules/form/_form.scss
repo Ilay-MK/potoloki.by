@@ -5,7 +5,7 @@
 .form {
     border-radius: 5px;
     box-shadow: 0px 0px 60px scotch-color-level('default', 6);
-    padding: 15px;
+    padding: 15px 15px 30px;
     position: relative;
     text-align: center;
     z-index: 99;
@@ -15,7 +15,7 @@
     /// @prop: xs, sm, md, lg (bootstrap);
     /// @prop: ($maxWidth: x, $minWidth: x, $maxHeight: x, $minHeight: x), где x - число с "px";
     @include breakpoint(md) {
-        padding: 30px;
+        padding: 30px 30px 45px;
     }
 
     /* переписать по BEM */
