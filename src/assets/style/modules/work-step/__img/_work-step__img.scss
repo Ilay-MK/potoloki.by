@@ -10,5 +10,6 @@ $sprite__length: 31px; /* width: 31px; */
 .work-step__img {
     @include bg-cover;
     background-image: url(../img/work-steps/work-steps__sprite.png);
-    @include size(31px, 27px); /* ! Размеры временные */
+    display: block;
+    //@include size(31px, 27px); /* ! Размеры временные */
 }
