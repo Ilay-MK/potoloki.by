@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+/// @BemEntryName: -=[ form ]=-.
+/// @BemEntryModName: -=[ theme ]=-.
+/// @BemEntryModValue: -=[ dark-opacity ]=-.
+/// @description: мод тёмно-прозрачное оформление формы.
+.form_theme_dark-opacity {
+    background-color: scotch-color-alpha('default', 'dark');
+}
