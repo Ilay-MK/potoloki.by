@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+/// @varName: -=[ $arrowSprite__length ]=-.
+/// @require: $sizeRhombusElem.
+/// @description: длина "одного спрайта" (расстояние, через которое следующая картинка в спрайте).
+$big-arrowSprite__length: $sizeRhombusElem + 1; /* width: 201px; */
+
+/// @BemEntryName: -=[ big-arrow ]=-.
+/// @BemElementName: -=[ img ]=-.
+/// @description: элемент большой стрелки (блок или картинка) вложенные в обёртку ".big-arrow__item".
+/// @description: выравнивает элемент.
+.big-arrow__img {
+    @include bg-cover;
+    background-image: url(../img/big-arrow/big-arrow__sprite-items_905x150.png);
+    @include size(100%, auto);
+    transform: rotate(-$degRhombus);
+}
