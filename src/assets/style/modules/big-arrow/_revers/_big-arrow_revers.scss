@@ -6,4 +6,16 @@
 /// @description: ротэйт в другую сторону - против часовой.
 .big-arrow_revers {
     transform: rotate(-$degRhombus);
+
+    /* visible-sm-block */
+
+    /// @name: -=[ breakpoint ]=-;
+    /// @description: функция-помошник работы с медиа запросами (breakpoints);
+    /// @prop: xs, sm, md, lg (bootstrap);
+    /// @prop: ($maxWidth: x, $minWidth: x, $maxHeight: x, $minHeight: x), где x - число с "px";
+    @include breakpoint($maxWidth: map-get($breakpoints, "sm-max"), $minWidth: map-get($breakpoints, "sm-min")) {
+        margin-top: 0;
+        position: relative;
+        top: -100px;
+    }
 }
