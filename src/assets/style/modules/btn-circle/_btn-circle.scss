@@ -5,5 +5,5 @@
 .btn-circle {
     border-radius: 50%;
     text-transform: uppercase;
-    @include size(100px);
+    @include size(100px !important);
 }
