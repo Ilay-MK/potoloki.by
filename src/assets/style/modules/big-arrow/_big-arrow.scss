@@ -6,17 +6,18 @@ $sizeRhombusElem: 150px;
 
 /// @varName: -=[ $sizeMarginElemRhombusBigArrow ]=-.
 /// @description: значение отступов между ромбов-картинок в большой стрелке.
-$sizeMarginElemRhombusBigArrow: 5px;
+$sizeMarginElemRhombusBigArrow: 4px;
 
 /// @varName: -=[ $sizeRhombusBigArrow ]=-.
 /// @description: значение размера большой стрелки, состоящей из ромбов-картинок.
-$sizeRhombusBigArrow: $sizeRhombusElem*3 + $sizeMarginElemRhombusBigArrow*12;
+$sizeRhombusBigArrow: $sizeRhombusElem*3 + $sizeMarginElemRhombusBigArrow*6;
 
 /// @BemEntryName: -=[ big-arrow ]=-.
 /// @require: $sizeRhombusBigArrow.
 /// @require: $degRhombus.
 /// @description: большая стрелка из ромбов-картинок.
 .big-arrow {
+    margin-top: 80px;
     overflow: hidden;
     @include size($sizeRhombusBigArrow);
     transform: rotate($degRhombus);
