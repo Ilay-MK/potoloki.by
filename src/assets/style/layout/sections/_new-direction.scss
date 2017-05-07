@@ -3,6 +3,10 @@
 /// @sectionName: -=[ new-direction ]=-.
 /// @description: секция нового направления в установке натяжных потолков.
 #new-direction {
+    background-color: scotch-color-level('default', 9);
+    background-image: url(../img/new-direction/bg.png);
+    background-position: 0 50%;
+    background-size: auto;
 
     .lead-form-wrapper {
         margin-top: 20px;
