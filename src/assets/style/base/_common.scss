@@ -129,6 +129,8 @@ h6, .h6 {
 section {
     @include bg-cover;
     /*background-position: center bottom;*/ /*50% 50%*/
+    padding-bottom: 50px;
+    padding-top: 50px;
 }
 
 /*@include hl-color ("img") {
