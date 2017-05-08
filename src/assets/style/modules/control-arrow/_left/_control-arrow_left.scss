@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+/// @BemEntryName: -=[ control-arrow ]=-.
+/// @BemEntryModName: -=[ left ]=-.
+/// @require: FontAwesome.
+/// @description: стрелка влево.
+.control-arrow_left {
+
+    &:after {
+        content: "\f053";
+    }
+}

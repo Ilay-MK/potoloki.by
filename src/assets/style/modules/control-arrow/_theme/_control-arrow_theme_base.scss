@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+/// @BemEntryName: -=[ control-arrow ]=-.
+/// @BemEntryModName: -=[ theme ]=-.
+/// @BemEntryModValue: -=[ base ]=-.
+/// @description: базовая тема стерлок.
+.control-arrow_theme_base {
+    color: scotch-color("default");
+
+    &:hover {
+        color: scotch-color("warning");
+    }
+
+    &:before,
+    &:after {
+
+    }
+}

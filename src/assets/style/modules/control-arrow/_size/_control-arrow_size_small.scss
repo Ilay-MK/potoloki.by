@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+/// @BemEntryName: -=[ control-arrow ]=-.
+/// @BemEntryModName: -=[ size ]=-.
+/// @BemEntryModValue: -=[ small ]=-.
+/// @description: description.
+.control-arrow_size_small {
+
+    &:before,
+    &:after {
+        font-size: 0.75em;
+    }
+}
