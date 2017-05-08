@@ -2,13 +2,14 @@
 
 /// @BemEntryName: -=[ bg-half ]=-.
 /// @description: половина фона прозрачна.
+/// @description: блок-обёртка для 2-х секций: bonuses && our-projects.
 .bg-half {
-    /*background-color: transparent;
-    background-image: url(../img/transparent.png);
-    background-position-y: 0;
-    background-position-x: 50%;
-    background-repeat: repeat;
-    background-size: 100% 100%;*/
 
-    background: linear-gradient(to right, #fff 50%, transparent 50%);
+    /// @name: -=[ breakpoint ]=-;
+    /// @description: функция-помошник работы с медиа запросами (breakpoints);
+    /// @prop: xs, sm, md, lg (bootstrap);
+    /// @prop: ($maxWidth: x, $minWidth: x, $maxHeight: x, $minHeight: x), где x - число с "px";
+    @include breakpoint(md) {
+        background: linear-gradient(to right, #fff 50%, transparent 50%);
+    }
 }
