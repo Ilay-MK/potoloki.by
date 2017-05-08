@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+/// @BemEntryName: -=[ project ]=-.
+/// @BemElementName: -=[ hr ]=-.
+/// @description: hr проекта.
+.project__hr {
+    background-color: #fff;
+    background: #fff;
+
+    border: 0;
+    @include size(100%, 1px);
+}
