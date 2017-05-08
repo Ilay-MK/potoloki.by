@@ -4,5 +4,9 @@
 /// @BemElementName: -=[ seq ]=-.
 /// @description: порядковый номер бонуса.
 .bonuse__seq {
-
+    @extend .h2;
+    color: scotch-color("warning");
+    display: inline-block;
+    margin: 0 5px;
+    vertical-align: middle;
 }
