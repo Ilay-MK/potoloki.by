@@ -5,6 +5,7 @@
 /// @description: кнопка формы.
 .form__btn {
     color: map-get($colors, "base");
+    box-shadow: 0px 0px 60px scotch-color-level('default', 6);
 
     /// @name: -=[ breakpoint ]=-;
     /// @description: функция-помошник работы с медиа запросами (breakpoints);
