@@ -10,6 +10,7 @@
     display: inline-block !important;
     float: left;
     padding-right: 20px;
+    @include size(auto, 100%);
 
     /// @name: -=[ breakpoint ]=-;
     /// @description: ;
@@ -17,7 +18,6 @@
     /// @prop: ($maxWidth: x, $minWidth: x, $maxHeight: x, $minHeight: x), где x - число с "px";
     @include breakpoint(xs) {
         border-right: 0;
-        height: 100%;
     }
 
     /// @name: -=[ breakpoint ]=-;
@@ -25,6 +25,5 @@
     /// @prop: xs, sm, md, lg (bootstrap);
     /// @prop: ($maxWidth: x, $minWidth: x, $maxHeight: x, $minHeight: x), где x - число с "px";
     @include breakpoint(sm) {
-        height: 55px;
     }
 }

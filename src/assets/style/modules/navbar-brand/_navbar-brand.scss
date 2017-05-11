@@ -15,7 +15,6 @@
         padding-top: 5px;
     }
     @include breakpoint(sm) {
-        height: 80px;
-        max-height: 80px;
+        height: auto;
     }
 }
