@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+/// @BemEntryName: -=[ big-arrow ]=-.
+/// @BemEntryModName: -=[ position ]=-.
+/// @BemEntryModValue: -=[ absolute ]=-.
+/// @require: npm modul mathsass (sqrt).
+/// @require: $sizeRhombusBigArrow.
+/// @require: $degRhombus.
+/// @description: мод большой стрелки - позиция абсолютная (и выравниваение по верху).
+.big-arrow_position_absolute {
+    margin-top: ($sizeRhombusBigArrow * sqrt(2) - $sizeRhombusBigArrow) / 2;
+    position: absolute;
+    top: 0;
+}
