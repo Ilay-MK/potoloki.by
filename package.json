@@ -31,6 +31,7 @@
         "gulp-useref": "^2.1.0",
         "gulp-watch": "^4.3.8",
         "imagemin-pngquant": "^4.2.2",
+        "mathsass": "^0.10.0",
         "rimraf": "^2.5.2",
         "wiredep": "^2.2.2"
     },
