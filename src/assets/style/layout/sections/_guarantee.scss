@@ -9,8 +9,13 @@
         margin: 30px;
     }
 
-    /* переписать по Bem */
+    /* переписать на Bem */
     .big-arrow {
-        margin-top: -100px;
+
+        &-sm {
+            margin-bottom: 15px;
+            margin-top: 15px;
+        }
+
     }
 }
