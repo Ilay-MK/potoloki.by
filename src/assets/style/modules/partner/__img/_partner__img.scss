@@ -4,5 +4,5 @@
 /// @BemElementName: -=[ img ]=-.
 /// @description: логотип.
 .partner__img {
-
+    @include size(100%);
 }
