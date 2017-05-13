@@ -9,7 +9,6 @@
     /// @prop: xs, sm, md, lg (bootstrap);
     /// @prop: ($maxWidth: x, $minWidth: x, $maxHeight: x, $minHeight: x), где x - число с "px";
     @include breakpoint(md) {
-        padding-top: 150px;
         margin-left: 30px;
     }
 
