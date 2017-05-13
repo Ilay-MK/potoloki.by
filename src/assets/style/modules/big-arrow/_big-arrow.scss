@@ -12,12 +12,16 @@ $sizeMarginElemRhombusBigArrow: 4px;
 /// @description: значение размера большой стрелки, состоящей из ромбов-картинок.
 $sizeRhombusBigArrow: $sizeRhombusElem*3 + $sizeMarginElemRhombusBigArrow*6;
 
+/// @varName: -=[ $sizeRhombusBigArrow ]=-.
+/// @description: значение размера дагонали большой стрелки (квадрата).
+$sizeDiagonalRhombusBigArrow: $sizeRhombusBigArrow * sqrt(2);
+
 /// @BemEntryName: -=[ big-arrow ]=-.
-/// @require: $sizeRhombusBigArrow.
-/// @require: $degRhombus.
-/// @description: большая стрелка из ромбов-картинок.
+/// @require: npm modul mathsass (sqrt).
+/// @require: $sizeDiagonalRhombusBigArrow.
+/// @description: большая стрелка.
 .big-arrow {
     overflow: hidden;
-    @include size($sizeRhombusBigArrow);
-    transform: rotate($degRhombus);
+    position: relative;
+    @include size($sizeDiagonalRhombusBigArrow *2/3, $sizeDiagonalRhombusBigArrow);
 }
