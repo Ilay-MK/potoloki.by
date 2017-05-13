@@ -1,12 +1,12 @@
 @charset "UTF-8";
 
-/// @varname: -=[ clientBorderColor ]=-
+/// @varname: -=[ partnerBorderColor ]=-
 /// @description: цвет бордера.
-$clientBorderColor: lighten(map-get($colors, "default"), 45%);
+$partnerBorderColor: lighten(map-get($colors, "default"), 45%);
 
-/// @BemEntryName: -=[ client ]=-.
+/// @BemEntryName: -=[ partner ]=-.
 /// @description: логотип и заголовок-описание (место, формат...).
-.client {
+.partner {
     border-color: transparent;
     border-style: solid;
     border-width: 1px;
@@ -26,8 +26,8 @@ $clientBorderColor: lighten(map-get($colors, "default"), 45%);
     }*/
 
     & + & {
-        border-left-color: $clientBorderColor;
-        border-top-color: $clientBorderColor;
+        border-left-color: $partnerBorderColor;
+        border-top-color: $partnerBorderColor;
     }
 
     /* - */
@@ -44,6 +44,6 @@ $clientBorderColor: lighten(map-get($colors, "default"), 45%);
     }
 }
 
-.clearfix + .client {
-    border-top-color: $clientBorderColor;
+.clearfix + .partner {
+    border-top-color: $partnerBorderColor;
 }
