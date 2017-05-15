@@ -8,4 +8,13 @@
     background-image: url(../img/types-ceilings/bg.png);
     background-position: 100% 50%;
     background-size: auto;
+
+    /* Переписать по Bem */
+    .carousel-control {
+        /*@extend .control-arrow_theme_base;*/
+
+        &:hover {
+            color: scotch-color("warning");
+        }
+    }
 }
