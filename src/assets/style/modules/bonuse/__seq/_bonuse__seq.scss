@@ -4,11 +4,19 @@
 /// @BemElementName: -=[ seq ]=-.
 /// @description: порядковый номер бонуса.
 .bonuse__seq {
-    @extend .font_title;
-    font-family: Bristol;
-    font-size: 4em;
     color: scotch-color("warning");
     display: inline-block;
-    margin: 0 5px;
+    font-family: Bristol;
+    font-size: 3.5em;
+    line-height: 0.9em;
+    margin-right: 10px;
     vertical-align: middle;
+
+    /// @name: -=[ breakpoint ]=-;
+    /// @description: функция-помошник работы с медиа запросами (breakpoints);
+    /// @prop: xs, sm, md, lg (bootstrap);
+    /// @prop: ($maxWidth: x, $minWidth: x, $maxHeight: x, $minHeight: x), где x - число с "px";
+    @include breakpoint(md) {
+        float: left;
+    }
 }
