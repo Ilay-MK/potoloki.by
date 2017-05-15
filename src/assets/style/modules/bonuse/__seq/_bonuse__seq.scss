@@ -4,7 +4,9 @@
 /// @BemElementName: -=[ seq ]=-.
 /// @description: порядковый номер бонуса.
 .bonuse__seq {
-    @extend .h2;
+    @extend .font_title;
+    font-family: Bristol;
+    font-size: 4em;
     color: scotch-color("warning");
     display: inline-block;
     margin: 0 5px;
