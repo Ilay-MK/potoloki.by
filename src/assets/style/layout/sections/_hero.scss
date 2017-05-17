@@ -3,9 +3,12 @@
 /// @identifiername: -=[ hero ]=-.
 /// @description: 1 экран (секция).
 #hero {
-    background-image: url(../img/hero/bg.jpg);
+    background-color: #fff;
+    /*background-image: url(../img/hero/bg.jpg);*/
+    background-image: url(../img/hero/bg.png);
     padding-top: 60px;
     min-height: 700px;
+    background-position-y: 100%;
 
     /// @name: -=[ breakpoint ]=-;
     /// @description: ;

@@ -5,8 +5,9 @@
 #new-direction {
     background-color: scotch-color-level('default', 9);
     background-image: url(../img/new-direction/bg.png);
-    background-position: 0 50%;
-    background-size: auto;
+    /*background-position: 0 50%;
+    background-size: auto;*/
+    background-position-y: 0%;
 
     /* переписать на Bem */
     .lead-form-wrapper {

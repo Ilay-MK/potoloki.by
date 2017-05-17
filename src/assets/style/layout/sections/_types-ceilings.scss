@@ -6,8 +6,9 @@
     /*background-color: #fff;*/
     background-color: scotch-color-level('default', 9);
     background-image: url(../img/types-ceilings/bg.png);
-    background-position: 100% 50%;
-    background-size: auto;
+    /*background-position: 100% 50%;
+    background-size: auto;*/
+    background-position-y: 100%;
 
     /* Переписать по Bem */
     .carousel-control {
