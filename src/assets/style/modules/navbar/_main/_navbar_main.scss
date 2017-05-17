@@ -7,6 +7,9 @@
     overflow: hidden;
     @include transition();
 
+    /* box-shadow: 0px 20px 40px -20px #c7c7c7; */
+     box-shadow: 0px 10px 60px -10px #c7c7c7;
+
     /* преписать по BEM */
     .btn {
         border: 1px solid transparent !important;
