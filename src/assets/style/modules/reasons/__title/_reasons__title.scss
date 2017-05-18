@@ -5,4 +5,5 @@
 /// @description: заголовок причины почему выбирают нас.
 .reasons__title {
     @extend .font_title;
+    text-align: left;
 }

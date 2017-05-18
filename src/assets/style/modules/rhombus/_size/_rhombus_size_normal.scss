@@ -1,9 +1,23 @@
 @charset "UTF-8";
 
+/// @varName: -=[ $sizeRhombus ]=-.
+/// @description: значение размера ромба.
+$sizeRhombus_normal: 200px;
+
+/// @varName: -=[ $sizeDiagonalRhombus ]=-.
+/// @description: значение размера дагонали ромба.
+$sizeDiagonalRhombus_normal: $sizeRhombus_normal * sqrt(2);
+
+/// @varName: -=[ $sizeProtrusion_normal ]=-.
+/// @description: значение выступа квадрата при повороте за границы.
+$sizeProtrusion_normal: ($sizeDiagonalRhombus_normal - $sizeRhombus_normal) / 2;
+
 /// @BemEntryName: -=[ rhombus ]=-.
 /// @BemEntryModName: -=[ size ]=-.
 /// @BemEntryModValue: -=[ normal ]=-.
 /// @description: ромб.
 .rhombus_size_normal {
+    /*margin-left: $sizeProtrusion_normal;*/
+    /*margin-top: $sizeProtrusion_normal;*/
     @include size(200px);
 }

@@ -7,10 +7,15 @@ $logoRhombusCount: 4;
 /// @BemEntryName: -=[ rhombus ]=-.
 /// @BemEntryModName: -=[ theme ]=-.
 /// @BemEntryModValue: -=[ logo ]=-.
+/// @description: мод темы цветов логотипа.
+.rhombus_theme_logo {
+    border-width: 1px ;
+    border-style: outset; /* outset | ridge */
+}
+
 /// @BemEntryModValue: -=[ 1..4 ]=-.
 /// @require: $logoRhombusCount.
 /// @require: $logo__colors.
-/// @description: мод темы цветов логотипа.
 @for $i from 1 through $logoRhombusCount {
     .rhombus_theme_logo-#{$i} {
         background-color: map-get($logo__colors, #{$i});

@@ -5,4 +5,5 @@
 /// @description: описание причины почему выбирают нас.
 .reasons__desc {
     @extend .text-desc;
+    text-align: left;
 }
