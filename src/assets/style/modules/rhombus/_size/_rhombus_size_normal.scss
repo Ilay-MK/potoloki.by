@@ -5,5 +5,5 @@
 /// @BemEntryModValue: -=[ normal ]=-.
 /// @description: ромб.
 .rhombus_size_normal {
-    @include rhombus_size_normal;
+    @include size(200px);
 }

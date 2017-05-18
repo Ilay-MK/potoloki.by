@@ -31,6 +31,13 @@ $company__colors: (
     'white'       : #fff
 );
 
+$logo__colors: (
+    '1' : map-get($company__colors, "primary"),
+    '2' : map-get($company__colors, "base"),
+    '3' : map-get($company__colors, "warning"),
+    '4' : map-get($company__colors, "danger"),
+);
+
 /* ------ */
 /* COLORS */
 /* ------ */

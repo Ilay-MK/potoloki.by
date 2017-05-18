@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+/// @varName: -=[ advantage__imgCount ]=-.
+/// @description: количество картинок.
+$logoRhombusCount: 4;
+
+/// @BemEntryName: -=[ rhombus ]=-.
+/// @BemEntryModName: -=[ theme ]=-.
+/// @BemEntryModValue: -=[ logo ]=-.
+/// @BemEntryModValue: -=[ 1..4 ]=-.
+/// @require: $logoRhombusCount.
+/// @require: $logo__colors.
+/// @description: мод темы цветов логотипа.
+@for $i from 1 through $logoRhombusCount {
+    .rhombus_theme_logo-#{$i} {
+        background-color: map-get($logo__colors, #{$i});
+    }
+}

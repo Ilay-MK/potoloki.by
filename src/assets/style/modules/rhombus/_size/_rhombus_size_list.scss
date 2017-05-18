@@ -2,8 +2,8 @@
 
 /// @BemEntryName: -=[ rhombus ]=-.
 /// @BemEntryModName: -=[ size ]=-.
-/// @BemEntryModValue: -=[ big ]=-.
+/// @BemEntryModValue: -=[ list ]=-.
 /// @description: большой ромб.
-.rhombus_size_big {
-    @include rhombus_size_big;
+.rhombus_size_list {
+    @include size(50px);
 }
