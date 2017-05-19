@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+/// @BemEntryName: -=[ ball ]=-.
+/// @BemElementName: -=[ img ]=-.
+/// @BemElementModName: -=[ inline ]=-.
+/// @description: мод отображения иконка с описанием в одну строку.
+.ball__img_inline {
+    display: inline-block;
+    margin-right: 15px;
+    vertical-align: middle;
+}
