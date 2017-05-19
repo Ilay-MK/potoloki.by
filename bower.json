@@ -20,7 +20,7 @@
     "animate.css": "^3.5.1",
     "protonet/jquery.inview": "^1.1.2",
     "jquery.maskedinput": "jquery-maskedinput#^1.4.1",
-    "fancybox": "^2.1.5"
+    "fancybox": "^3.0.47"
   },
   "devDependencies": {}
 }
