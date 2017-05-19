@@ -4,5 +4,16 @@
 /// @BemElementName: -=[ comment ]=-.
 /// @description: текс отзыва.
 .reviews__comment {
+    @extend .text-desc;
+    border-top-color: scotch-color-level('default', 6);
+    border-top-style: solid;
+    border-top-width: 1px;
+    padding: 15px;
+    text-align: left;
+    text-indent: 25px;
 
+    /* переписать по Bem */
+    ul {
+        text-indent: 0;
+    }
 }

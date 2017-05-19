@@ -4,5 +4,6 @@
 /// @BemElementName: -=[ date ]=-.
 /// @description: дата отзыва.
 .reviews__date {
-
+    @extend .font_color_second;
+    font-size: 70%;
 }

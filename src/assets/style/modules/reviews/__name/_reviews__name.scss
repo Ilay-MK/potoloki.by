@@ -4,5 +4,5 @@
 /// @BemElementName: -=[ name ]=-.
 /// @description: блок имени.
 .reviews__name {
-
+    @extend .font_title;
 }

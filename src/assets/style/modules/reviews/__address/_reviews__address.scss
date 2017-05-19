@@ -4,5 +4,6 @@
 /// @BemElementName: -=[ address ]=-.
 /// @description: адрес объекта.
 .reviews__address {
-
+    @extend .font_color_second;
+    font-size: 70%;
 }
