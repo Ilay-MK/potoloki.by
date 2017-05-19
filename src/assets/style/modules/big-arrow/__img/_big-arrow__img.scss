@@ -11,6 +11,7 @@ $big-arrowSprite__length: $sizeRhombusElem + 1; /* width: 201px; */
 /// @description: выравнивает элемент.
 .big-arrow__img {
     @include bg-cover;
+    text-align: center;
     @include size(100%, 100%);
     //transform: rotate(-$degRhombus);
 

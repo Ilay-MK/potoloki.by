@@ -9,5 +9,6 @@
     float: left;
     overflow: hidden;
     margin: $sizeMarginElemRhombusBigArrow;
+    position: relative;
     @include size($sizeRhombusElem);
 }
