@@ -4,5 +4,6 @@
 /// @BemElementName: -=[ media ]=-.
 /// @description: блок заголовка медиа контента (фото/видео) отзыва.
 .reviews__media {
-
+    max-height: 100px;
+    overflow: hidden;
 }
