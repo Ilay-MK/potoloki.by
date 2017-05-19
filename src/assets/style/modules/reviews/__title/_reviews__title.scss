@@ -4,6 +4,8 @@
 /// @BemElementName: -=[ title ]=-.
 /// @description: блок заголовка - описания отзыва.
 .reviews__title {
+    display: inline-block;
     margin-bottom: 15px;
     margin-top: 15px;
+    vertical-align: middle;
 }
