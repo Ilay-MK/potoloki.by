@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+/// @BemEntryName: -=[ mark-bdr ]=-.
+/// @description: выделение правйо границы.
+.mark-bdr {
+    border-right-color: scotch-color-level('default', 6);
+    border-right-style: solid;
+    border-right-width: 1px;
+}
