@@ -1,1 +1,2 @@
 //= addClassScrollTop.js
+//= getPageSize.js
