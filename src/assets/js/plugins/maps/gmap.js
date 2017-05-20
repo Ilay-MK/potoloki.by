@@ -74,7 +74,9 @@ $(function() {
     // Handler for .ready() called.
     $.extend(true, $(window).resize(), $(window).resize(
         function () {
-            map.setCenter( marker.getPosition() );
+            window.setTimeout(function() {
+                map.setCenter( marker.getPosition() );
+            }, 500);
         }
     ));
 
