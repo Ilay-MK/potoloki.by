@@ -15,6 +15,8 @@ $(function(){
 
 //= ../../../bower_components/jquery.maskedinput/dist/jquery.maskedinput.min.js
 
+/*//= ../../../bower_components/parallax/deploy/parallax.min.js*/
+
 /*
  * ---------------
  * Plugins Scripts
