@@ -12,7 +12,7 @@
 */
 
 function getPageSize() {
-    var xScroll, yScroll;
+    var xScroll, yScroll, pageHeight, pageWidth;
 
     if (window.innerHeight && window.scrollMaxY) {
         xScroll = document.body.scrollWidth;
