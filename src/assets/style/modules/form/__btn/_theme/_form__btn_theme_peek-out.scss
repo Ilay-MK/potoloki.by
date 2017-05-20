@@ -6,7 +6,7 @@
 /// @BemElementModValue: -=[ peek-out ]=-.
 /// @description: мод - тема кнопки формы выглядывающая из формы (за пределы границы).
 .form__btn_theme_peek-out {
-    margin-bottom: -80px;
+    margin-bottom: -120px; /* -80px */
     position: relative;
     top: 15px;
     z-index: 99;

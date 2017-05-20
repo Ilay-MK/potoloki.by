@@ -1,10 +1,10 @@
 <!--
-    ![ LEAD-FORM-2 ]
+    ![ LEAD-FORM-INLINE-2 ]
 -->
 <!--
-    @name: -=[ .lead-form-2 ]=-.
-    @description: лид форма 2.
-    @description: кнопка submit круглая.
+    @name: -=[ .lead-form-inline-2 ]=-.
+    @description: лид форма в линию 2.
+    @description: кнопка submit native BS3.
     @prop: имя.
     @prop: email.
     @prop: телефон.
@@ -34,14 +34,14 @@
     - (успех)
     - (ошибка)
 -->
-<form class="form form_theme_white lead-form-2" action="./mail.php" method="post">
+<form class="form form_theme_white form-inline lead-form-inline-2" action="./mail.php" method="post">
     <fieldset>
 
         <!-- Form Name -->
-        <legend class="form__legend form__legend_theme_white">
-            Заполните,
+        <legend class="form__legend">
+            Уточните,
             <div class="small form__legend-second">
-                форму заявки и&nbsp;мы&nbsp;отправим Вам каталог с&nbsp;примерами узоров
+                условия приобретения потолка, заполнив форму
             </div>
         </legend>
 
@@ -54,21 +54,6 @@
             <!-- help blocks -->
             <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
             <span class="bsNameStatus sr-only">(успех)</span>
-        </div>
-
-        <!-- Email input-->
-        <!-- Email -->
-        <div class="form-group has-feedback form-group-md">
-            <label class="control-label sr-only" for="bsEmail">Ваш Email</label>
-            <div class="input-group">
-                <span class="input-group-addon">@</span>
-                <input name="bsEmail" type="email" placeholder="Ваш Email" class="form__input form__input_theme_white bsEmail form-control input-md" aria-describedby="bsEmailStatus" />
-            </div>
-
-            <span class="help-block sr-only">Ваша электронная почта</span>
-            <!-- help blocks -->
-            <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
-            <span class="bsEmailStatus sr-only">(успех)</span>
         </div>
 
         <!-- Tel input-->
@@ -92,8 +77,8 @@
         <!-- Button -->
         <!-- Submit -->
         <div class="form-group form-group-md">
-            <label class="control-label sr-only" for="bsSubmit">Получить каталог</label>
-            <button name="bsSubmit" class="form__btn form__btn_theme_peek-out bsSubmit btn btn-warning btn-circle btn-circle_theme_warning">Получить каталог</button>
+            <label class="control-label sr-only" for="bsSubmit">Уточнить условия</label>
+            <button name="bsSubmit" class="form__btn bsSubmit btn btn-warning">Уточнить условия</button>
         </div>
 
     </fieldset>
