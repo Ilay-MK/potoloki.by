@@ -1,3 +1,5 @@
+"use strict";
+
 /// @name: -=[ addClassScrollTop ]=-.
 /// @description: добавляет заданный класс заданному объекту через заданное расстояние.
 /// @require: jQuery 1.7+.

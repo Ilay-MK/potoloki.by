@@ -1,3 +1,5 @@
+"use strict";
+
 /// @name: -=[ getPageSize ]=-.
 /// @description: кроссбраузерное получение размеров окна на JS.
 /// @access: public.
