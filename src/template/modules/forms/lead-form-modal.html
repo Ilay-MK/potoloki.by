@@ -1,0 +1,88 @@
+<!--
+    ![ LEAD-FORM-MODAL ]
+-->
+<!--
+    @name: -=[ .lead-form-modal ]=-.
+    @description: модальная лид форма.
+    @description: кнопка submit круглая.
+    @prop: имя.
+    @prop: телефон.
+-->
+<!--
+    attribute status invalid validating:
+    ------------------------------------
+    aria-invalid="true"
+-->
+<!--
+    class status validating (.has-feedback):
+    ----------------------------------------
+    .has-success
+    .has-warning
+    .has-error
+-->
+<!--
+    class status validating icon:
+    -----------------------------
+    .glyphicon-warning-sign (warning)
+    .glyphicon-remove (error)
+    .glyphicon-ok (success)
+-->
+<!--
+    status validation text (bsXStatus):
+    -----------------------------------
+    - (успех)
+    - (ошибка)
+-->
+<form class="form form_theme_white lead-form-modal" action="./mail.php" method="post">
+    <fieldset>
+
+        <!-- Form Name -->
+        <legend class="form__legend">
+            Заполните,
+            <div class="small form__legend-second">
+                форму заявки, и&nbsp;мы&nbsp;Вам перезвонили
+            </div>
+        </legend>
+
+        <!-- Text input-->
+        <!-- Имя-->
+        <div class="form-group has-feedback form-group-md">
+            <label class="control-label sr-only" for="bsName">Ваше имя</label>
+            <input name="bsName" type="text" placeholder="Ваше имя" class="form__input bsName form-control input-md" aria-describedby="bsNameStatus" />
+            <span class="help-block sr-only">Как к Вам обращаться: Оля или Иван Петрович</span>
+            <!-- help blocks -->
+            <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+            <span class="bsNameStatus sr-only">(успех)</span>
+        </div>
+
+        <!-- Tel input-->
+        <!-- Телефон -->
+        <div class="form-group has-feedback form-group-md">
+            <label class="control-label sr-only" for="bsPhone">Ваш телефон</label>
+            <div class="input-group">
+                <span class="input-group-addon">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <!--<i class="fa fa-mobile" aria-hidden="true"></i>-->
+                    <!--<span class="glyphicon glyphicon-phone" aria-hidden="true"></span>-->
+                </span>
+                <input name="bsPhone" type="tel" placeholder="Ваш номер телефона" class="form__input bsPhone validating form-control input-md" aria-describedby="bsPhoneStatus" required="required" />
+            </div>
+            <span class="help-block sr-only">Для связи с Вами</span>
+            <!-- help blocks -->
+            <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+            <span class="bsPhoneStatus sr-only">(успех)</span>
+        </div>
+
+        <!-- Button -->
+        <!-- Submit -->
+        <div class="form-group form-group-md">
+            <label class="control-label sr-only" for="bsSubmit">Заказать звонок</label>
+            <button name="bsSubmit" class="form__btn bsSubmit btn btn-warning btn-circle btn-circle_theme_warning">Заказать звонок</button>
+            <span class="font_second">
+                Если Вы&nbsp;оставили заявку на&nbsp;звонок после 20:00,
+                то&nbsp;мы&nbsp;перезвоним на&nbsp;следующий день с&nbsp;10:00.
+            </span>
+        </div>
+
+    </fieldset>
+</form>
