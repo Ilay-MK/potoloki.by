@@ -6,4 +6,17 @@
 .reviews__date {
     @extend .font_color_second;
     font-size: 70%;
+
+    &:before {
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        font-smoothing: antialiased;
+
+        content: '\f274'; /* '\f073' */
+
+        margin-right: 5px;
+        width: 15px;
+    }
 }
