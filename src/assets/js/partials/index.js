@@ -3,4 +3,5 @@
 //= document.scroll.js
 //= navbars/index.js
 //= central-modal.js
+//= submit.js
 //= parallax.js
