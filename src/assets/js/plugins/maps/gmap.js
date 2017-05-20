@@ -1,35 +1,41 @@
-
-/*$('#gmap').on('inview', function(event, isInView) {
-    if (isInView) {
-        drop();
-    } else {
-        alert("out from gmap");
-    }
-});*/
-
-/* ------------------------------------------- */
-
+var map;
+var markers = [], marker;
 var neighborhoods = [
-  {lat: 53.911619, lng: 27.579647},
-  {lat: 53.911619, lng: 27.576343}
+    { lat: 53.840447, lng: 27.504932 }
 ];
-
 var image = './assets/img/map/marker.png';
 
-$('#gmap').one('inview', drop());
-
+/* ----------------------------------------------------------- */
 /* ----------------------------------------------------------- */
 
-
-
-/* ----------------------------------------------------------- */
+/// @require: variable map
+function initMap() {
+    map = new google.maps.Map(document.getElementById('gmap'), {
+        zoom: 17,
+        center: neighborhoods[0],
+        disableDefaultUI: true,
+        scrollwheel: false
+    });
+    /* 53.911619, 27.579647 */
+    /*var image = './assets/img/map/marker.png';*/
+    /*marker = new google.maps.Marker({
+        map: map,
+        draggable: true,
+        animation: google.maps.Animation.DROP,
+        position: {
+            lat: 53.911619,
+            lng: 27.579647
+        },
+        icon: image
+    });*/
+}
 
 function drop() {
     clearMarkers();
     /*for (var i = 0; i < neighborhoods.length; i++) {
         addMarker(neighborhoods[i], i * 200);
     }*/
-    addMarker({lat: 53.911619, lng: 27.579647}, 1500);
+    addMarker(neighborhoods[0], 1500);
 }
 
 function addMarker(position, timeout) {
@@ -63,3 +69,32 @@ function toggleBounce() {
         marker.setAnimation(google.maps.Animation.BOUNCE);
     }
 }
+
+$(function() {
+    // Handler for .ready() called.
+    $.extend(true, $(window).resize(), $(window).resize(
+        function () {
+            map.setCenter( marker.getPosition() );
+        }
+    ));
+
+    /* --- */
+
+    initMap();
+
+    $('#gmap').one('inview', function () {
+        window.setTimeout(function() {
+            drop();
+        }, 1500);
+    });
+
+    /*$('#gmap').on('inview', function(event, isInView) {
+        if (isInView) {
+            drop();
+        } else {
+            alert("out from gmap");
+        }
+    });*/
+
+    /* --- */
+});
