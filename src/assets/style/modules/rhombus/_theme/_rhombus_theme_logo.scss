@@ -11,6 +11,8 @@ $logoRhombusCount: 4;
 .rhombus_theme_logo {
     border-width: 1px ;
     border-style: outset; /* outset | ridge */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /// @BemEntryModValue: -=[ 1..4 ]=-.
