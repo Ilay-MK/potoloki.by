@@ -6,3 +6,4 @@
 //= navbar-brand__descript_mini.js
 //= navbar-nav__item.js
 //= navbar-nav_mini.js
+//= navbarCollapseLinkClick.js
