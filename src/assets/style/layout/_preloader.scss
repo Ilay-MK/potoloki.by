@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+/// @identifierName: -=[ preloader ]=-.
+/// @description: прелоудер.
+#preloader {
+    background-color: #fff;
+    left: 0;
+    position: fixed;
+    top: 0;
+    @include size(100%);
+    z-index: 99999;
+
+    img {
+		display: block;
+		left: 50%;
+		left: calc(50% - 20px);
+		position: fixed;
+		top: 50%;
+		top: calc(50% - 20px);
+        @include size(40px);
+	}
+}
+
+.preloader_hide {
+    display: none;
+    overflow: hidden;
+}

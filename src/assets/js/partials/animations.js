@@ -8,7 +8,7 @@ $(function() {
     var delay = 50;
 
     var $allObjectsAnim = [
-        $( '#navbar_main nav' ),
+        $( '#navbar_main' ),
         $( '#hero .lead-form-1' ),
         $( '.form_theme_white' ),
         $( '.type-ceiling' ),
@@ -63,13 +63,13 @@ $(function() {
     $( '#navbar_main' ).one('inview', function () {
         window.setTimeout(function() {
             $( "nav" ).css("opacity", 1).animateCss("fadeInDown");
-        }, delay);
+        }, delay + 1400);
     });
 
     $( '#hero' ).one('inview', function () {
         window.setTimeout(function() {
             $( ".lead-form-1" ).css("opacity", 1).animateCss("fadeInRight");
-        }, delay);
+        }, delay + 700);
     });
 
     $( '.form_theme_white' ).one('inview', function () {

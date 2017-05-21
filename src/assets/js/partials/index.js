@@ -1,3 +1,4 @@
+//= preloader.js
 //= varGlobal.js
 //= functions/index.js
 //= document.scroll.js
