@@ -3,3 +3,4 @@
 //= centerModal.js
 //= validate.js
 //= ajax.js
+//= clearValidationMarkers.js
