@@ -10,7 +10,6 @@
 
 function ajax(ob) {
     var result = $("#result");
-    alert("Test");
 
     if (!validate(ob)) {alert("invalid form");
         /*result.addClass("text-danger bg-danger").text("Пожалуйста, проверьте введённые данные!");*/
@@ -74,11 +73,12 @@ function ajax(ob) {
             $('#modalAlert-success').modal('show');
             /*$(ob).find('.form-control-feedback-message-success').addClass("flex-center");*/
             /*result.removeClass("text-danger bg-danger text-success bg-success").text("");*/
-            /*$(ob).find('.submit').prop('disabled', false);*/
-            yaCounter38441125.reachGoal('ORDER'); /* for Y. target */
-            $(ob).find('#whichService').val(""); /* нужно заменить на класс */
+            $(ob).find('.submit').prop('disabled', false);
+            //yaCounter00000000.reachGoal('ORDER'); /* for Y. target */
             $(ob).find('.has-feedback').removeClass('has-success');
             $(ob).find('.form-control-feedback').removeClass('glyphicon-ok');
+
+            $(ob).find('#whichService').val(""); /* нужно заменить на класс */
         }, 1000);
 
     });
