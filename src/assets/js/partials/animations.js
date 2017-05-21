@@ -63,13 +63,13 @@ $(function() {
     $( '#navbar_main' ).one('inview', function () {
         window.setTimeout(function() {
             $( "nav" ).css("opacity", 1).animateCss("fadeInDown");
-        }, delay + 1400);
+        }, delay + 800);
     });
 
     $( '#hero' ).one('inview', function () {
         window.setTimeout(function() {
             $( ".lead-form-1" ).css("opacity", 1).animateCss("fadeInRight");
-        }, delay + 700);
+        }, delay + 500);
     });
 
     $( '.form_theme_white' ).one('inview', function () {
