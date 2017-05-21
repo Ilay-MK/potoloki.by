@@ -3,29 +3,30 @@
 /// @name: -=[ ajax ]=-.
 /// @description: ajax отправка письма (заявки).
 /// @require: jQuery 1.7+.
+/// @require: validate().
 /// @access: public.
 /// @type: function.
 /// @prop: ob {jQuery object} - объект, к которому применяется данная функция (форма).
 
 function ajax(ob) {
-    var msg;
-    var processor;
-    var result;
-
     var result = $("#result");
+    alert("Test");
 
-    if (!validate(ob)) {
+    if (!validate(ob)) {alert("invalid form");
         /*result.addClass("text-danger bg-danger").text("Пожалуйста, проверьте введённые данные!");*/
         return false;
     }
 
-    processor = "./mail.php";
+    var processor = "./mail.php";
+    var msg;
 
     $.ajax({
         type: "POST",
         url: processor,
         data: $(ob).serialize()
+            + "&bsName=" + $(ob).find('.bsName').val()
             + "&bsPhone=" + $(ob).find('.bsPhone').val()
+            + "&bsEmail=" + $(ob).find('.bsEmail').val()
             + "&whichService=" + $(ob).closest('.whichService').attr("data-nameForm")
             + "&utm_source=" + $.getUrlVar('utm_source')
             + "&utm_term=" + $.getUrlVar('utm_term'),

@@ -4,18 +4,26 @@
 
 $(function() {
     // Ajax send mail
-    $(".order").submit(function (e) {
+    $("form").submit(function (e) {
         ajax(this);
 
         return false;
 	});
 
-    $('.submit').click(function () {
+    /*$(".order").submit(function (e) {
+        ajax(this);
+
+        return false;
+	});
+
+    $(".submit").click(function (e) {
+        //e.preventDefault();
+
         var recipient = $(this).closest(".order");
 
         $(recipient).submit();
         //ajax(recipient);
 
         return false;
-    });
+    });*/
 });
