@@ -5,3 +5,4 @@
 //= validate.js
 //= clearValidationMarkers.js
 //= ajax.js
+//= animBalls.js
