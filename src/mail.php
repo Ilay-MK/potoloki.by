@@ -19,7 +19,7 @@
     }*/
 
     if (!empty($_POST["bsEmail"])) {
-        $name = substr(htmlspecialchars(trim($_POST["bsEmail"])), 0, 255);
+        $email = substr(htmlspecialchars(trim($_POST["bsEmail"])), 0, 255);
     } /*else {
         $error = true;
     }*/
@@ -58,7 +58,14 @@
         $sitename  = "potoloki.by";
         $pagetitle = "Новая заявка с сайта \"$sitename\"";
 
-        $message   = "Телефон: $phone \n\nКуда кликнул: $whichService $utm_source__value $utm_term__value";
+        $message   = "
+                      Имя: $name \n
+                      Телефон: $phone \n
+                      Email: $email \n\n
+                      Куда кликнул: $whichService \n\n
+                      $utm_source__value \n
+                      $utm_term__value
+                     ";
 
         mail($recepient, $pagetitle, $message, "Content-type: text/plain; charset=\"utf-8\"\n From: $recepient");
     } else {
