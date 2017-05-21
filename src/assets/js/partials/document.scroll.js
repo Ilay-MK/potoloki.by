@@ -8,11 +8,12 @@
 /// @prop: function anonimus.
 /// @return: none.
 
-$(document).scroll( function () {
-    // TO DO
-    window.currentScrollPosition = +$(document).scrollTop();
+$(function() {
+    $(document).scroll( function () {
+        window.currentScrollPosition = +$(document).scrollTop();
 
-    var currScrollPos = window.currentScrollPosition;
+        var currScrollPos = window.currentScrollPosition;
 
-    /* --- */
+        /* --- */
+    });
 });
