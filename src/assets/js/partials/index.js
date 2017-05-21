@@ -6,4 +6,4 @@
 //= submit.js
 //= parallax.js
 //= clearValidMarkers__inputs.js
-//= ball.js
+//= animations.js
