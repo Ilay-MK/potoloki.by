@@ -28,7 +28,9 @@ $(function() {
         $( '.title__header' ),
         $( '.advantage' ),
         $( '.work-step' ),
-        $( '.terms-purchase' )
+        $( '.terms-purchase' ),
+        $( '.footer-info' ),
+        $( '.developer' )
     ];
 
     var titleCenter = [
@@ -143,6 +145,18 @@ $(function() {
     $( '#gmap' ).one('inview', function () {
         window.setTimeout(function() {
             $( "#gmap" ).css("opacity", 1).animateCss("zoomInUp");
+        }, delay + 100);
+    });
+
+    $( '.footer-info' ).one('inview', function () {
+        window.setTimeout(function() {
+            $( ".footer-info" ).css("opacity", 1).animateCss("fadeInUp");
+        }, delay);
+    });
+
+    $( '.developer' ).on('inview', function () {
+        window.setTimeout(function() {
+            $( ".developer" ).css("opacity", 1).animateCss("flip"); /* rotateIn | zoomInUp */
         }, delay);
     });
 

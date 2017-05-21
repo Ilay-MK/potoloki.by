@@ -82,10 +82,9 @@ $(function() {
 
     /* --- */
 
-    initMap();
-
     $('#gmap').one('inview', function () {
         window.setTimeout(function() {
+            initMap(); /* необходимо проверять или насильно инициализировать карту после загрузки библиотеки API gmap */
             drop();
         }, 1500);
     });
