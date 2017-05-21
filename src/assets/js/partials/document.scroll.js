@@ -1,3 +1,5 @@
+"use strict";
+
 /// @name: -=[ $(document).scroll ]=-.
 /// @description: description.
 /// @require: .
