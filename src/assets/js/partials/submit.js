@@ -5,6 +5,8 @@
 $(function() {
     // Ajax send mail
     $("form").submit(function (e) {
+        e.preventDefault();
+
         ajax(this);
 
         return false;
