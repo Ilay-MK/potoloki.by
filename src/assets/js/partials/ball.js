@@ -21,5 +21,6 @@ $(function() {
         $(".terms-purchase")
     ];
 
+    /* анимируем "яйца" */
     animBalls(balls);
 });
