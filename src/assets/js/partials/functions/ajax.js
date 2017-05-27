@@ -72,7 +72,7 @@ function ajax(ob) {
             /*$('#modalOrder').modal('hide');*/
             $(ob).closest(".modal").modal('hide');
             //отобразить сообщение об успехе
-            $('#modalAlert-success').modal('show');
+            $('#modal__thank-you').modal('show');
             /*$(ob).find('.form-control-feedback-message-success').addClass("flex-center");*/
             /*result.removeClass("text-danger bg-danger text-success bg-success").text("");*/
             $(ob).find('.submit').prop('disabled', false);
