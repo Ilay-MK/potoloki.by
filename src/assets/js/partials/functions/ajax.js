@@ -11,7 +11,9 @@
 function ajax(ob) {
     var result = $("#result");
 
-    if (!validate(ob)) {alert("invalid form");
+    if (!validate(ob)) {
+        /*alert("invalid form");*/
+
         /*result.addClass("text-danger bg-danger").text("Пожалуйста, проверьте введённые данные!");*/
         return false;
     }
