@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+/// @BemEntryName: -=[ big-arrow ]=-.
+/// @BemElementName: -=[ img-label ]=-.
+/// @description: заголовок-описание item (иконки / пункта).
+.big-arrow__img-label {
+    @extend .font_second;
+    line-height: 1em;
+    /*position: absolute;*/
+    text-transform: uppercase;
+}
