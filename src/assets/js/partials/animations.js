@@ -29,8 +29,8 @@ $(function() {
         $( '.advantage' ),
         $( '.work-step' ),
         $( '.terms-purchase' ),
-        $( '.footer-info' ),
-        $( '.developer' )
+        $( '.footer-info' )/*,
+        $( '.developer' )*/
     ];
 
     var titleCenter = [
@@ -154,11 +154,11 @@ $(function() {
         }, delay);
     });
 
-    $( '.developer' ).on('inview', function () {
+    /*$( '.developer' ).on('inview', function () {
         window.setTimeout(function() {
-            $( ".developer" ).css("opacity", 1).animateCss("flip"); /* rotateIn | zoomInUp */
+            $( ".developer" ).css("opacity", 1).animateCss("flip");  rotateIn | zoomInUp
         }, delay);
-    });
+    });*/
 
     /* --- */
 
