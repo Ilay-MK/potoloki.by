@@ -3,6 +3,7 @@
     header('Content-Type: text/html; charset= utf-8');
 
     $error = false;
+    $email = "";
 
     /* Объявление переменной с какой секции заявка */
     $whichService = "";
@@ -54,7 +55,7 @@
     /* -------------------------- */
 
     if (!$error) {
-        $recepient = "MiKrob09@gmail.com";
+        $recepient = "client@potoloki.by";
         $sitename  = "potoloki.by";
         $pagetitle = "Новая заявка с сайта \"$sitename\"";
 
