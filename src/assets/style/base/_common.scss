@@ -29,7 +29,7 @@ html {
 body {
     background-color: scotch-color-level('default', 9);
     color: map-get($colors, "base");
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', 'Roboto', sans-serif;
     font-size: $font-size-base; // 12px
     padding: 0;
     text-align: center;
