@@ -3,7 +3,9 @@ var markers = [], marker;
 var neighborhoods = [
     { lat: 53.840447, lng: 27.504932 }
 ];
-var image = './assets/img/map/marker.png';
+/*
+    new google.maps.LatLng(neighborhoods[0])
+*/
 
 /* ----------------------------------------------------------- */
 /* ----------------------------------------------------------- */
@@ -16,18 +18,28 @@ function initMap() {
         disableDefaultUI: true,
         scrollwheel: false
     });
-    /* 53.911619, 27.579647 */
-    /*var image = './assets/img/map/marker.png';*/
-    /*marker = new google.maps.Marker({
+
+    /*var markerImage = './assets/img/map/marker.png';*/
+    marker = new google.maps.Marker({
         map: map,
-        draggable: true,
+        /*draggable: true,*/
         animation: google.maps.Animation.DROP,
-        position: {
-            lat: 53.911619,
-            lng: 27.579647
-        },
-        icon: image
-    });*/
+        position: neighborhoods[0],
+        title: 'POTOLOKI'/*,
+        icon: image*/
+    });
+
+    google.maps.event.addListener(map, 'zoom_changed', function(){
+        map.setCenter( marker.getPosition() );
+    });
+
+    $.extend(true, $(window).resize(), $(window).resize(
+        function () {
+            map.setCenter( marker.getPosition() );
+        }
+    ));
+
+    /*drop();*/
 }
 
 function drop() {
@@ -36,6 +48,13 @@ function drop() {
         addMarker(neighborhoods[i], i * 200);
     }*/
     addMarker(neighborhoods[0], 1500);
+}
+
+function clearMarkers() {
+    for (var i = 0; i < markers.length; i++) {
+        markers[i].setMap(null);
+    }
+    markers = [];
 }
 
 function addMarker(position, timeout) {
@@ -55,13 +74,6 @@ function addMarker(position, timeout) {
     }, timeout);
 }
 
-function clearMarkers() {
-    for (var i = 0; i < markers.length; i++) {
-        markers[i].setMap(null);
-    }
-    markers = [];
-}
-
 function toggleBounce() {
     if (marker.getAnimation() !== null) {
         marker.setAnimation(null);
@@ -71,22 +83,11 @@ function toggleBounce() {
 }
 
 $(function() {
-    // Handler for .ready() called.
-    $.extend(true, $(window).resize(), $(window).resize(
-        function () {
-            window.setTimeout(function() {
-                map.setCenter( marker.getPosition() );
-            }, 500);
-        }
-    ));
-
-    /* --- */
 
     $('#gmap').one('inview', function () {
         window.setTimeout(function() {
-            initMap(); /* необходимо проверять или насильно инициализировать карту после загрузки библиотеки API gmap */
-            drop();
-        }, 1500);
+            initMap(); // необходимо проверять или насильно инициализировать карту после загрузки библиотеки API gmap */
+        }, 500);
     });
 
     /*$('#gmap').on('inview', function(event, isInView) {
