@@ -43,7 +43,7 @@ var path = {
         htmlBase: './src/template/base/*.html',
         htmlToBase: './src/template/base/',
         php: './src/*.php',
-        js: 'src/assets/js/main.js',
+        js: 'src/assets/js/*.js',
         style: 'src/assets/style/main.scss',
         img: 'src/assets/img/**/*.*',
         img_prettyPhoto: './bower_components/jquery-prettyPhoto/images/prettyPhoto/**/*.*',
