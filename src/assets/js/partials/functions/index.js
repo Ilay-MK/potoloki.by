@@ -7,4 +7,5 @@
 //= ajax.js
 //= animSeq.js
 //= animBalls.js
+//= imgLoaded.js
 //= lazyLoad.js
