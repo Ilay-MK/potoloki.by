@@ -7,4 +7,5 @@
 //= submit.js
 //= parallax.js
 //= clearValidMarkers__inputs.js
+//= lazyLoad.js
 //= animations.js
