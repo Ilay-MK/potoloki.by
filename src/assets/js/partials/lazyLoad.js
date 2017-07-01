@@ -2,10 +2,10 @@
 
 /// @require: lazyLoad();
 
-/*$(function() {
+$(function() {
     lazyLoad();
-});*/
+});
 
-$(window).load(function(){
+/*$(window).load(function(){
     lazyLoad();
-};
+};*/
