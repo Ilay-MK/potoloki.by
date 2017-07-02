@@ -6,4 +6,10 @@
 .type-ceiling__img-link {
     display: block;
     max-height: 215px;
+
+    /* переписать по BEM */
+    img {
+        margin: 0 auto;
+        /*width: 100%;*/
+    }
 }
