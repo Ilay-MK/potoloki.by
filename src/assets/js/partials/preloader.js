@@ -2,8 +2,11 @@
 
 /// @description: работа прелоудера.
 
-$(window).on('load', function () {
+/*$(window).on('load', function () {
 
+});*/
+
+$(function() {
     /* preloader */
     var preloader = setTimeout( function () {
         jQuery( '#preloader' ).fadeOut( "slow" , function () {
@@ -19,4 +22,4 @@ $(window).on('load', function () {
 
         });
     }, 800);
- });
+});
