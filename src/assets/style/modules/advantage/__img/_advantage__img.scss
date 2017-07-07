@@ -9,7 +9,7 @@ $sprite__length: 31px; /* width: 31px; */
 /// @description: блок картинки преимуществ.
 .advantage__img {
     @include bg-cover;
-    background-image: url(../img/advantages/advantages__sprite.png);
+    /*background-image: url(../img/advantages/advantages__sprite.png);*/
     //@include size(31px, 27px); /* ! Размеры временные */
 
     /// @name: -=[ breakpoint ]=-;
