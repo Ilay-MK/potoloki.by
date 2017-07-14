@@ -43,8 +43,6 @@
 
     /* timer */
     .timer {
-        background-color: #fff;
-        padding: 15px;
         position: relative;
 
         img {
@@ -54,11 +52,10 @@
         .white-line {
             background-color: #fff;
             bottom: 0;
-            height: 30px;
-            left: 0;
-            right: 0;
-            position: absolute;
+            height: 14px;
+            width: 266px;
             z-index: 5;
+            @include align(false, true, absolute);
         }
     }
 }
