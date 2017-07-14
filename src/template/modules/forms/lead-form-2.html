@@ -4,9 +4,6 @@
 <!--
     @name: -=[ .lead-form-2 ]=-.
     @description: лид форма 2.
-    @description: кнопка submit круглая.
-    @prop: имя.
-    @prop: email.
     @prop: телефон.
 -->
 <!--
@@ -34,48 +31,22 @@
     - (успех)
     - (ошибка)
 -->
-<form class="form form_theme_white lead-form-2 order" action="./mail.php" method="post">
+<form class="form form-inline lead-form-2 order" action="./mail.php" method="post">
     <fieldset>
 
         <!-- Form Name -->
         <legend class="form__legend form__legend_theme_white">
-            Пенсионерам и Новосёлам скидка 11%
+            Пенсионерам и Новосёлам скидка 10%
 
             <div class="sale-visual img-wrapper">
-                <img src="data:image/gif;base64,R0lGO DlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="assets/img/sale/sale_2s_5.jpg" class="img-responsive img-thumbnail lazy_load" alt="Пенсионеры и Новосёлы" />
+                <img src="data:image/gif;base64,R0lGO DlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="assets/img/sale/sale_2s.jpg" class="img-responsive img-thumbnail lazy_load" alt="Пенсионеры и Новосёлы" />
             </div>
             <div class="small form__legend-second">
                 <!--условия акции, уточняйте по телефону-->
             </div>
         </legend>
 
-        <!-- Text input-->
-        <!-- Имя-->
-        <div class="form-group has-feedback form-group-md">
-            <label class="control-label sr-only" for="bsName">Ваше имя</label>
-            <input name="bsName" type="text" placeholder="Ваше имя" class="form__input form__input_theme_white bsName form-control input-md" aria-describedby="bsNameStatus" />
-            <span class="help-block sr-only">Как к Вам обращаться: Оля или Иван Петрович</span>
-            <!-- help blocks -->
-            <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
-            <span class="bsNameStatus sr-only">(успех)</span>
-        </div>
-
-        <!-- Email input-->
-        <!-- Email -->
-        <div class="form-group has-feedback form-group-md">
-            <label class="control-label sr-only" for="bsEmail">Ваш Email</label>
-            <div class="input-group">
-                <span class="input-group-addon">@</span>
-                <input name="bsEmail" type="email" placeholder="Ваш Email" class="form__input form__input_theme_white bsEmail form-control input-md" aria-describedby="bsEmailStatus" />
-            </div>
-
-            <span class="help-block sr-only">Ваша электронная почта</span>
-            <!-- help blocks -->
-            <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
-            <span class="bsEmailStatus sr-only">(успех)</span>
-        </div>
-
-        <!-- Tel input-->
+        <!-- Tel input -->
         <!-- Телефон -->
         <div class="form-group has-feedback form-group-md">
             <label class="control-label sr-only" for="bsPhone">Ваш телефон</label>
@@ -97,7 +68,7 @@
         <!-- Submit -->
         <div class="form-group form-group-md">
             <label class="control-label sr-only" for="bsSubmit">Жду звонка</label>
-            <button name="bsSubmit" class="submit form__btn form__btn_theme_peek-out bsSubmit btn btn-warning btn-circle btn-circle_theme_warning">Жду звонка</button>
+            <button name="bsSubmit" class="submit form__btn bsSubmit btn btn-danger">Жду звонка</button>
         </div>
 
     </fieldset>
