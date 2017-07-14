@@ -40,4 +40,25 @@
             }
         }
     }*/
+
+    /* timer */
+    .timer {
+        background-color: #fff;
+        padding: 15px;
+        position: relative;
+
+        img {
+            z-index: 3;
+        }
+
+        .white-line {
+            background-color: #fff;
+            bottom: 0;
+            height: 30px;
+            left: 0;
+            right: 0;
+            position: absolute;
+            z-index: 5;
+        }
+    }
 }
