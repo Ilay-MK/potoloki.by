@@ -9,17 +9,14 @@
 $(function() {
     /* preloader */
     var preloader = setTimeout( function () {
-        jQuery( '#preloader' ).fadeOut( "slow" , function () {
+        jQuery( '#preloader' ).fadeOut( "normal" , function () {
             // Анимация завершена.
 
-        });
-    }, 300);
+            /* preloader_hide */
+            jQuery( '#preloader_hide' ).fadeIn( "normal" , function () {
+                // Анимация завершена.
 
-    /* preloader_hide */
-    var preloader = setTimeout( function () {
-        jQuery( '.preloader_hide' ).fadeIn( "slow" , function () {
-            // Анимация завершена.
-
+            });
         });
-    }, 800);
+    }, 0);
 });
