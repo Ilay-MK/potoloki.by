@@ -4,10 +4,10 @@
 /// @BemElementName: -=[ title ]=-.
 /// @description: описание карточки, заголовок.
 .bonuse__title {
-    /*font-family: Bristol;*/
-    font-size: 200%;
     color: #a94442;
     display: inline-block;
+    font-size: 1.2em;
+    font-weight: 700;
     vertical-align: middle;
 
     /// @name: -=[ breakpoint ]=-;
