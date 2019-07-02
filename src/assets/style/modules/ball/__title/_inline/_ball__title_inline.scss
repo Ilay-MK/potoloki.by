@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+/// @BemEntryName: -=[ ball ]=-.
+/// @BemElementName: -=[ title ]=-.
+/// @BemElementModName: -=[ inline ]=-.
+/// @description: мод отображения иконка с описанием в одну строку.
+.ball__title_inline {
+
+    /// @name: -=[ breakpoint ]=-;
+    /// @description: функция-помошник работы с медиа запросами (breakpoints);
+    /// @prop: xs, sm, md, lg (bootstrap);
+    /// @prop: ($maxWidth: x, $minWidth: x, $maxHeight: x, $minHeight: x), где x - число с "px";
+    @include breakpoint(md) {
+        display: inline-block;
+        vertical-align: middle;
+    }
+}

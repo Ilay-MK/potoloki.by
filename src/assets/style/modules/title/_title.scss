@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+/// @BemEntryName: -=[ title ]=-.
+/// @description: блок заголовка.
+.title {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    /*max-width: 500px;*/
+    text-align: center;
+}

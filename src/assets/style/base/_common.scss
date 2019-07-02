@@ -20,29 +20,33 @@
 }
 
 html {
-    /*font-size: 16px;*/
+    font-size: 1px;
     min-width: 320px;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     width: 100%;
 }
 
 body {
-    @include f();
-    //background-color: c();
-    background-color: #e6c89d;
-    color: #000;
-    /*font-size: 16px;*/
+    background-color: scotch-color-level('default', 9);
+    color: map-get($colors, "base");
+    font-family: 'Roboto Condensed', 'Roboto', sans-serif;
+    font-size: $font-size-base; // 12px
     padding: 0;
+    text-align: center;
     text-rendering: auto;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
             font-smoothing: antialiased;
     -webkit-font-smoothing: antialiased;
+
+    @include breakpoint(md) {
+        text-align: left;
+    }
 }
 
 a {
     display: inline-block;
     text-decoration: none;
-    @include transition(color);
+    @include transition();
 
     &:hover {
         text-decoration: underline;
@@ -87,12 +91,69 @@ img {
     }
 }
 
+/* headers */
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+    font-weight: 400;
+}
+
+/// base font size = 14px;
+h1, .h1 {
+    font-size: 1.9em;
+
+    @include breakpoint(lg) {
+        font-size: 2.3em;
+    }
+}
+h2, .h2 {
+    font-size: 2.142857142857143em;
+}
+h3, .h3 {
+    font-size: 1.714285714285714em;
+}
+h4, .h4 {
+    font-size: 1.285714285714286em;
+}
+h5, .h5 {
+    font-size: 1em;
+}
+h6, .h6 {
+    font-size: 0.8571428571428571em;
+}
+
+section {
+    @include bg-cover;
+    /*background-position: center bottom;*/ /*50% 50%*/
+    padding-bottom: 30px;
+    padding-top: 30px;
+
+    /// @name: -=[ breakpoint ]=-;
+    /// @description: функция-помошник работы с медиа запросами (breakpoints);
+    /// @prop: xs, sm, md, lg (bootstrap);
+    /// @prop: ($maxWidth: x, $minWidth: x, $maxHeight: x, $minHeight: x), где x - число с "px";
+    @include breakpoint(sm) {
+        padding-bottom: 50px;
+        padding-top: 50px;
+    }
+}
+
 /*@include hl-color ("img") {
     color: #fff;
     background: transparent;
 }*/
 
+/* Extras */
+
 :focus {
+
+}
+
+@include highlight-color {
 
 }
 

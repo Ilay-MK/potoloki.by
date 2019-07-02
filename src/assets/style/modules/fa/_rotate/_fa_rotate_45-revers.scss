@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+/// @BemEntryName: -=[ fa ]=-.
+/// @BemEntryModName: -=[ rotate ]=-.
+/// @BemEntryModValue: -=[ 45-revers ]=-.
+/// @require: $degRhombus.
+/// @description: description.
+.fa_rotate_45-revers {
+    transform: rotate(-$degRhombus);
+}

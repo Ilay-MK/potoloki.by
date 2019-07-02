@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+/// @BemEntryName: -=[ navbar-nav ]=-.
+/// @BemElementName: -=[ item ]=-.
+/// @description: item списка navbar-nav навигационного бара.
+.navbar-nav__item {
+    font-size: $font-size-base * 0.85;
+    line-height: 1.1em;
+}

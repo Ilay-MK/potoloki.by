@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+/// @BemEntryName: -=[ big-arrow ]=-.
+/// @BemEntryModName: -=[ revers ]=-.
+/// @require: npm modul mathsass (sqrt).
+/// @require: $sizeDiagonalRhombusBigArrow.
+/// @description: ротэйт в другую сторону - против часовой.
+.big-arrow_revers {
+    @include size($sizeDiagonalRhombusBigArrow, $sizeDiagonalRhombusBigArrow * 2/3);
+}

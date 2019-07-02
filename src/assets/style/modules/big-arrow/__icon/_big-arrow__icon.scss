@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+/// @BemEntryName: -=[ big-arrow ]=-.
+/// @BemElementName: -=[ icon ]=-.
+/// @description: элемент - иконка.
+.big-arrow__icon {
+    /*@include size(96px);*/
+    @include size(80px);
+}

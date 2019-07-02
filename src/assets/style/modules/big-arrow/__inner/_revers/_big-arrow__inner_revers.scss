@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+/// @BemEntryName: -=[ big-arrow ]=-.
+/// @BemElementName: -=[ inner ]=-.
+/// @BemElementModName: -=[ revers ]=-.
+/// @require: $degRhombus.
+/// @require: $sizeRhombusBigArrow.
+/// @require: $sizeDiagonalRhombusBigArrow.
+/// @description: ротэйт в другую сторону - против часовой.
+.big-arrow__inner_revers {
+    bottom: 0;
+    margin-bottom: ($sizeDiagonalRhombusBigArrow - $sizeRhombusBigArrow) / 2;
+    margin-top: 0;
+    top: auto;
+    transform: rotate(-$degRhombus);
+}

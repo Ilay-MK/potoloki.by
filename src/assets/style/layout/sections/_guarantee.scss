@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+/// @sectionName: -=[ guarantee ]=-.
+/// @description: секция гарантии.
+#guarantee {
+    padding-bottom: 0;
+    background-color: scotch-color-level('default', 9);
+    background-image: url(../img/guarantee/bg.png);
+    /*background-position: 0 50%;
+    background-size: auto;*/
+    /*background-position-y: 0%;*/
+
+    /* переписать по Bem */
+    .fa-margin {
+        margin: 0px 20px 0px 20px;
+    }
+
+    /* переписать на Bem */
+    .big-arrow {
+
+        &-sm {
+            margin-bottom: 15px;
+            margin-top: 30px;
+        }
+
+    }
+}

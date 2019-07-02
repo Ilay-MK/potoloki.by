@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+/// @BemEntryName: -=[ font ]=-.
+/// @BemEntryModName: -=[ color ]=-.
+/// @BemEntryModValue: -=[ second ]=-.
+/// @description: цвет второстепенного шрифта.
+.font_color_second {
+    color: map-get($colors, "default");
+}

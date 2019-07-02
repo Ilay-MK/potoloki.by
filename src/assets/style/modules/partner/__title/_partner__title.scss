@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+/// @BemEntryName: -=[ partner ]=-.
+/// @BemElementName: -=[ title ]=-.
+/// @description: заголовок-описание.
+.partner__title {
+    @extend .font_title;
+    display: none;
+}

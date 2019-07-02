@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+/// @BemEntryName: -=[ reviews ]=-.
+/// @BemElementName: -=[ name ]=-.
+/// @description: блок имени.
+.reviews__name {
+    @extend .font_title;
+}

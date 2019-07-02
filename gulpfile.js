@@ -26,51 +26,45 @@ var
 /* ------------------- */
 var path = {
     build: {
-        html: './build/',
-        js: './build/assets/js/',
-        css: './build/assets/css/',
-        img: './build/assets/img/',
-        img_prettyPhoto: './build/assets/img/prettyPhoto',
-        fonts: './build/assets/fonts/',
-        files: './build/assets/files/',
-        mail: './build/',
-        libs: './build/assets/libs/'
+        html: 'build/',
+        php: 'build/',
+        js: 'build/assets/js/',
+        css: 'build/assets/css/',
+        img: 'build/assets/img/',
+        img_prettyPhoto: 'build/assets/img/prettyPhoto',
+        fonts: 'build/assets/fonts/',
+        files: 'build/assets/files/',
+        mail: 'build/',
+        version: 'build/',
+        libs: 'build/assets/libs/'
     },
     src: {
-        html: './src/*.html',
+        html: 'src/*.html',
         htmlBase: './src/template/base/*.html',
         htmlToBase: './src/template/base/',
-        //js: './src/assets/js/*.js',
-        js: './src/*.js',
-        //style: './src/assets/style/*.scss',
-        style: './src/*.scss',
-        img: './src/assets/img/**/*.*',
-        //img: './src/**/img/**/*.*',
-        //img_png: './src/**/*.png',
-        //img_svg: './src/**/*.svg',
-        //img_jpg: './src/**/*.jpg',
+        php: './src/*.php',
+        js: 'src/assets/js/*.js',
+        style: 'src/assets/style/main.scss',
+        img: 'src/assets/img/**/*.*',
         img_prettyPhoto: './bower_components/jquery-prettyPhoto/images/prettyPhoto/**/*.*',
-        fonts: './src/assets/fonts/**/*.*',
-        files: './src/assets/files/**/*.*',
-        mail: './src/mail.php',
-        libs: './src/assets/libs/**/*.*'
+        fonts: 'src/assets/fonts/**/*.*',
+        files: 'src/assets/files/**/*.*',
+        mail: 'src/mail.php',
+        version: 'src/version',
+        libs: 'src/assets/libs/**/*.*'
     },
     watch: {
-        html: './src/**/*.html',
-        //js: './src/assets/js/**/*.js',
-        js: './src/**/*.js',
-        //style: './src/assets/style/**/*.scss',
-        style: './src/**/*.scss',
-        img: './src/assets/img/**/*.*',
-        //img: './src/**/img/**/*.*',
-        //img_png: './src/**/*.png',
-        //img_svg: './src/**/*.svg',
-        //img_jpg: './src/**/*.jpg',
+        html: 'src/**/*.html',
+        php: 'src/*.php',
+        js: 'src/assets/js/**/*.js',
+        style: 'src/assets/style/**/*.scss',
+        img: 'src/assets/img/**/*.*',
         img_prettyPhoto: './bower_components/jquery-prettyPhoto/images/prettyPhoto/**/*.*',
-        fonts: './src/assets/fonts/**/*.*',
-        files: './src/assets/files/**/*.*',
-        mail: './src/mail.php',
-        libs: './src/assets/libs/**/*.*'
+        fonts: 'src/assets/fonts/**/*.*',
+        files: 'src/assets/files/**/*.*',
+        mail: 'src/mail.php',
+        version: 'src/version',
+        libs: 'src/assets/libs/**/*.*'
     },
     fontAwesomeDir: './bower_components/font-awesome/',
     fontAwesomeCSS: './bower_components/font-awesome/css/font-awesome.css',
@@ -90,7 +84,7 @@ var config = {
     tunnel: false,
     host: 'localhost',
     port: 9000,
-    logPrefix: "projectName"
+    logPrefix: "potoloki"
 };
 
 /* ------------------- */
@@ -136,7 +130,7 @@ gulp.task('clean', function (cb) {
 gulp.task('build:html', function () {
     gulp.src(path.src.html)
         .pipe(rigger())
-        /*.pipe(minifyHTML({collapseWhitespace: true}))*/
+        .pipe(minifyHTML({collapseWhitespace: true}))
         .pipe(gulp.dest(path.build.html))
         .pipe(reload({stream: true}))
         .pipe(notify('build:html Done!'));
@@ -175,6 +169,36 @@ gulp.task('build:style', function () {
         .pipe(notify('build:style Done!'));
 });
 
+gulp.task('build:fonts', function () {
+    gulp.src(path.src.fonts)
+        .pipe(gulp.dest(path.build.fonts))
+        .pipe(notify('build:fonts Done!'));
+});
+
+gulp.task('build:files', function () {
+    gulp.src(path.src.files)
+        .pipe(gulp.dest(path.build.files))
+        .pipe(notify('build:files Done!'));
+});
+
+gulp.task('build:libs', function () {
+    gulp.src(path.src.libs)
+        .pipe(gulp.dest(path.build.libs))
+        .pipe(notify('build:libs Done!'));
+});
+
+gulp.task('build:php', function () {
+    gulp.src(path.src.php)
+        .pipe(gulp.dest(path.build.php))
+        .pipe(notify('build:php Done!'));
+});
+
+gulp.task('build:version', function () {
+    gulp.src(path.src.version)
+        .pipe(gulp.dest(path.build.version))
+        .pipe(notify('build:version Done!'));
+});
+
 gulp.task('build:image', function () {
     gulp.src(path.src.img)
         /*.pipe(imagemin({
@@ -199,6 +223,12 @@ gulp.task('build:image', function () {
         .pipe(gulp.dest(path.build.img_prettyPhoto))
         .pipe(reload({stream: true}))
         .pipe(notify('build:image_prettyPhoto Done!'));
+});*/
+
+/*gulp.task('build:fonts-awesome', function () {
+    gulp.src(path.fontAwesomeFonts)
+        .pipe(gulp.dest(path.build.fonts))
+        .pipe(notify('build:fonts-awesome Done!'));
 });*/
 
 /*gulp.task('build:image_png', function () {
@@ -240,50 +270,23 @@ gulp.task('build:image', function () {
         .pipe(notify('build:image_jpg Done!'));
 });*/
 
-/*gulp.task('build:fonts-awesome', function () {
-    gulp.src(path.fontAwesomeFonts)
-        .pipe(gulp.dest(path.build.fonts))
-        .pipe(notify('build:fonts-awesome Done!'));
-});*/
-
-gulp.task('build:fonts', function () {
-    gulp.src(path.src.fonts)
-        .pipe(gulp.dest(path.build.fonts))
-        .pipe(notify('build:fonts Done!'));
-});
-
-gulp.task('build:files', function () {
-    gulp.src(path.src.files)
-        .pipe(gulp.dest(path.build.files))
-        .pipe(notify('build:files Done!'));
-});
-
-gulp.task('build:libs', function () {
-    gulp.src(path.src.libs)
-        .pipe(gulp.dest(path.build.libs))
-        .pipe(notify('build:libs Done!'));
-});
-
-gulp.task('build:mail', function () {
+/*gulp.task('build:mail', function () {
     gulp.src(path.src.mail)
         .pipe(gulp.dest(path.build.mail))
         .pipe(notify('build:mail Done!'));
-});
+});*/
 
 gulp.task('build', [
     'build:html',
-    'build:js',
     'build:style',
+    'build:js',
     'build:fonts',
     'build:files',
     'build:libs',
-    'build:mail',
-    'build:image'/*,
-    'build:image_png',
-    'build:image_svg',
-    'build:image_jpg'*/
+    'build:php',
+    'build:version',
+    'build:image'
 ]);
-
 
 gulp.task('watch', function () {
     watch([path.watch.html], function (event, cb) {
@@ -295,21 +298,6 @@ gulp.task('watch', function () {
     watch([path.watch.js], function (event, cb) {
         gulp.start('build:js');
     });
-    watch([path.watch.img], function (event, cb) {
-        gulp.start('build:image');
-    });
-    /*watch([path.watch.img_prettyPhoto], function (event, cb) {
-        gulp.start('build:image_prettyPhoto');
-    });*/
-    /*watch([path.watch.img_png], function (event, cb) {
-        gulp.start('build:image_png');
-    });
-    watch([path.watch.img_svg], function (event, cb) {
-        gulp.start('build:image_svg');
-    });
-    watch([path.watch.img_jpg], function (event, cb) {
-        gulp.start('build:image_jpg');
-    });*/
     watch([path.watch.fonts], function (event, cb) {
         gulp.start('build:fonts');
     });
@@ -319,9 +307,21 @@ gulp.task('watch', function () {
     watch([path.watch.libs], function (event, cb) {
         gulp.start('build:libs');
     });
-    watch([path.watch.mail], function (event, cb) {
-        gulp.start('build:mail');
+    watch([path.watch.php], function (event, cb) {
+        gulp.start('build:php');
     });
+    watch([path.watch.version], function (event, cb) {
+        gulp.start('build:version');
+    });
+    watch([path.watch.img], function (event, cb) {
+        gulp.start('build:image');
+    });
+    /*watch([path.watch.img_prettyPhoto], function (event, cb) {
+        gulp.start('build:image_prettyPhoto');
+    });*/
+    /*watch([path.watch.mail], function (event, cb) {
+        gulp.start('build:mail');
+    });*/
 });
 
 // Watch Wiredep

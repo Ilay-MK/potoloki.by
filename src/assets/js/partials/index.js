@@ -1,1 +1,11 @@
-/*//= common.js*/
+//= preloader.js
+//= varGlobal.js
+//= functions/index.js
+//= document.scroll.js
+//= navbars/index.js
+//= central-modal.js
+//= submit.js
+//= parallax.js
+//= clearValidMarkers__inputs.js
+//= lazyLoad.js
+//= animations.js

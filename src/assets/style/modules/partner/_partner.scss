@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+/// @varname: -=[ partnerBorderColor ]=-
+/// @description: цвет бордера.
+$partnerBorderColor: lighten(map-get($colors, "default"), 45%);
+
+/// @BemEntryName: -=[ partner ]=-.
+/// @description: логотип и заголовок-описание (место, формат...).
+.partner {
+    border-color: transparent;
+    border-style: solid;
+    border-width: 1px;
+    display: inline-block;
+    padding: 10px;
+    @include size(140px);
+    vertical-align: top;
+
+    /* 2n */
+    /*&:nth-child(even) {
+
+        &:after {
+            clear: both;
+            content: " ";
+            display: block;
+        }
+    }*/
+
+    & + & {
+        border-left-color: $partnerBorderColor;
+        border-top-color: $partnerBorderColor;
+    }
+
+    /* - */
+    /* :nth-last-child(-2n+2) - предпоследний элемент */
+    /*&:first-child(2),
+    &:last-child,
+    &:nth-child(2),
+    &:nth-last-child(-2n+2) {
+        border-color: transparent;
+    }*/
+
+    &:nth-child(2) {
+        border-top-color: transparent;
+    }
+}
+
+.clearfix + .partner {
+    border-top-color: $partnerBorderColor;
+}

@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+/// @BemEntryName: -=[ btn ]=-.
+/// @description: правила для модуля btn.
+.btn {
+    @include transition();
+    white-space: pre-line;
+
+    &:active:focus {
+        @include clear-edging();
+    }
+}

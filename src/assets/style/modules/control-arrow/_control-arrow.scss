@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+/// @BemEntryName: -=[ control-arrow ]=-.
+/// @require: FontAwesome.
+/// @description: контролы в ввиде стрелок.
+.control-arrow {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    text-rendering: auto;
+    font-smoothing: antialiased;
+    padding: 15px;
+    margin: 15px;
+    @include transition();
+
+    &:focus,
+    &:hover {
+        text-decoration: none;
+        outline: 0;
+    }
+
+    &:before,
+    &:after {
+        vertical-align: middle;
+    }
+}

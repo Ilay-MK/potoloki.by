@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+/// @BemEntryName: -=[ form ]=-.
+/// @BemElementName: -=[ legend-second ]=-.
+/// @description: под-легенда формы (второстепенный текст легенды).
+.form__legend-second {
+    display: block;
+    font-size: $font-size-base * 0.85;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+/// @BemEntryName: -=[ project ]=-.
+/// @BemElementName: -=[ __img-link ]=-.
+/// @description: линк картинки во весь размер.
+.project__img-link {
+    display: block;
+    max-height: 295px;
+    overflow: hidden;
+}

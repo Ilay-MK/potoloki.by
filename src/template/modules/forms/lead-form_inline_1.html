@@ -1,0 +1,74 @@
+<!--
+    ![ LEAD-FORM_INLINE_1 ]
+-->
+<!--
+    @name: -=[ .lead-form_inline_1 ]=-.
+    @description: лид форма 1 в строку.
+    @description: Форма акции.
+    @description: Форма получения подарков.
+    @prop: телефон.
+-->
+<!--
+    attribute status invalid validating:
+    ------------------------------------
+    aria-invalid="true"
+-->
+<!--
+    class status validating (.has-feedback):
+    ----------------------------------------
+    .has-success
+    .has-warning
+    .has-error
+-->
+<!--
+    class status validating icon:
+    -----------------------------
+    .glyphicon-warning-sign (warning)
+    .glyphicon-remove (error)
+    .glyphicon-ok (success)
+-->
+<!--
+    status validation text (bsXStatus):
+    -----------------------------------
+    - (успех)
+    - (ошибка)
+-->
+<form class="form form-inline lead-form lead-form_inline_1 order" action="./mail.php" method="post">
+    <fieldset>
+
+        <!-- Form Name -->
+        <legend class="form__legend form__legend_sale">
+            <strong>Светильники</strong> и&nbsp;<strong>Карнизы</strong> в&nbsp;Подарок
+        </legend>
+
+        <div class="img-wrapper sale-visual">
+            <img src="data:image/gif;base64,R0lGO DlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="assets/img/sale/sale_hero.jpg" class="img-responsive img-thumbnail lazy_load center-block" alt="Светильники и Карнизы" />
+        </div>
+
+        <!-- Tel input-->
+        <!-- Телефон -->
+        <div class="form-group has-feedback form-group-md">
+            <label class="control-label sr-only" for="bsPhone">Ваш телефон</label>
+            <div class="input-group">
+                <span class="input-group-addon">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <!--<i class="fa fa-mobile" aria-hidden="true"></i>-->
+                    <!--<span class="glyphicon glyphicon-phone" aria-hidden="true"></span>-->
+                </span>
+                <input name="bsPhone" type="tel" placeholder="Ваш номер телефона" class="form__input form__input_theme_white bsPhone validating form-control input-md" aria-describedby="bsPhoneStatus" required="required" />
+            </div>
+            <span class="help-block sr-only">Для связи с Вами</span>
+            <!-- help blocks -->
+            <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+            <span class="bsPhoneStatus sr-only">(успех)</span>
+        </div>
+
+        <!-- Button -->
+        <!-- Submit -->
+        <div class="form-group form-group-md">
+            <label class="control-label sr-only" for="bsSubmit">Получить подарки</label>
+            <button name="bsSubmit" class="submit form__btn bsSubmit btn btn-warning">Получить подарки</button>
+        </div>
+
+    </fieldset>
+</form>

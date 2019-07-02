@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+/// @BemEntryName: -=[ contacts ]=-.
+/// @BemElementName: -=[ contact ]=-.
+/// @description: контакт (телефон, почта...).
+.contacts__contact {
+    /*@extend .font_title;*/
+    /*display: block;*/
+    /*white-space: nowrap;*/
+    color: scotch-color("primary");
+    display: inline-block;
+    font-size: 1.5em;
+    @include transition;
+
+    &:hover {
+        color: scotch-color("danger");
+    }
+}

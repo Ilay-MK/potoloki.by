@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+/// @varName: -=[ advantage__imgCount ]=-.
+/// @description: количество картинок.
+$advantage__imgCount: 6;
+
+/// @BemEntryName: -=[ advantage ]=-.
+/// @BemElementName: -=[ img ]=-.
+/// @BemElementModName: -=[ seq ]=-.
+/// @BemElementModValue: -=[ 1..6 ]=-.
+/// @require: parent.bgi (sprite).
+/// @require: $sprite__length.
+/// @description: фоновая картинка для преимуществ.
+
+@for $i from 1 through $advantage__imgCount {
+    .advantage__img_seq_#{$i} {
+        $length: -$sprite__length*$i;
+        background-position: $length 0 ;
+    }
+}

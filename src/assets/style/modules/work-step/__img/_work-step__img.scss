@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+/// @varName: -=[ sprite__length ]=-.
+/// @description: длина "одного спрайта" (расстояние, через которое следующая картинка в спрайте).
+$sprite__length: 31px; /* width: 31px; */
+
+/// @BemEntryName: -=[ work-step ]=-.
+/// @BemElementName: -=[ img ]=-.
+/// @description: блок картинки преимуществ.
+.work-step__img {
+    @include bg-cover;
+    background-image: url(../img/work-steps/work-steps__sprite.png);
+    display: block;
+    //@include size(31px, 27px); /* ! Размеры временные */
+}

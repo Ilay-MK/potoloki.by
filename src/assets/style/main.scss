@@ -1,19 +1,61 @@
 @charset "UTF-8";
 
 /*
-* Custom
-*/
+ * ------------
+ * Vendor Style
+ */
+
+/*
+ * -------------
+ * Plugins Style
+ */
+
+// ---
+// Insert code here
+@import "node_modules/mathsass/dist/math";
+// ---
+
+/*#
+ * / Plugins Style
+ * ---------------
+ */
+
+/*#
+ * / Vendor Style
+ * --------------
+ */
+
+// ---------------------------------------------------------------- //
+// ---------------------------------------------------------------- //
+
+/*
+ * ------------
+ * Custom Style
+ */
 
 /*!
- *  Custom CSS
- *  Copyright (c) 2017 Ilya Purouski
+ * Custom Style
+ * Copyright (c) 2017 Ilya Purouski
+ * --------------------------------
  */
+
+// ---
+// Insert code here
+// ---
 @import "theme/index";
-@import "utilites/index";
+@import "utilities/index";
 @import "base/index";
 @import "layout/index";
 @import "modules/index";
 @import "states/index";
+
 /*#
- *  / Custom CSS
+ * / Custom Style
+ * Copyright (c) 2017 Ilya Purouski
+ * --------------------------------
+ */
+
+/*#
+ * Custom Style
+ * ------------
  */

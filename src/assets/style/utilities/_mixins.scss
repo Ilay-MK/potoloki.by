@@ -131,6 +131,105 @@
     outline: none;
 }
 
+/// Помошник для медиа запросов
+/// "Breakpoint mixin supports: xs, sm, md, lg" - string name
+@mixin breakpoint($minWidth: 0, $maxWidth: 0, $minHeight: 0, $maxHeight: 0) {
+    $type: type-of($minWidth);
+
+    @if $type == string {
+        $class: $minWidth;
+
+        @if $class == xs {
+            @media (max-width: map-get($breakpoints, "xs-max")) {
+                @content;
+            }
+        }
+        @else if $class == sm {
+            @media (min-width: map-get($breakpoints, "sm-min")) {
+                @content;
+            }
+        }
+        @else if $class == md {
+            @media (min-width: map-get($breakpoints, "md-min")) {
+                @content;
+            }
+        }
+        @else if $class == lg {
+            @media (min-width: map-get($breakpoints, "lg-min")) {
+                @content;
+            }
+        }
+        @else {
+            @warn "Breakpoint mixin supports: xs, sm, md, lg";
+        }
+    }
+    @else if $type == number {
+        $widthQuery: "all" !default;
+
+        // width
+        @if $minWidth != 0 and $maxWidth != 0 {
+            $widthQuery: "(min-width: #{$minWidth}) and (max-width: #{$maxWidth})";
+        }
+        @else if $minWidth != 0 and $maxWidth == 0 {
+            $widthQuery: "(min-width: #{$minWidth})";
+        }
+        @else if $minWidth == 0 and $maxWidth != 0 {
+            $widthQuery: "(max-width: #{$maxWidth})";
+        }
+
+        // height
+        $heightQuery: 0;
+        @if $minHeight != 0 and $maxHeight != 0 {
+            $heightQuery: "(min-height: #{$minHeight}) and (max-height: #{$maxHeight})";
+        }
+        @else if $minHeight != 0 and $maxHeight == 0 {
+            $heightQuery: "(min-height: #{$minHeight})";
+        }
+        @else if $minHeight == 0 and $maxHeight != 0 {
+            $heightQuery: "(max-height: #{$maxHeight})";
+        }
+
+        @if $minHeight != 0 {
+            @media #{$widthQuery} and #{$heightQuery} {
+                @content;
+            }
+        }
+        @else if $maxHeight != 0 {
+            @media #{$widthQuery} and #{$heightQuery} {
+                @content;
+            }
+        }
+        @else if $minHeight != 0 and $maxHeight != 0 {
+            @media #{$widthQuery} and #{$heightQuery} {
+                @content;
+            }
+        }
+        @else {
+            @media #{$widthQuery} {
+                @content;
+            }
+        }
+    }
+
+    // EXAMPLES: @include breakpoint($maxWidth: 700px, $minWidth: 500px, $maxHeight: 1500px, $minHeight: 600px) {
+    // @include breakpoint($min: 400px, $max: 500px) {
+    //     background-color: red;
+    // }
+    // aside.primary {
+    //     @include breakpoint(md) {
+    //         float: right;
+    //         width: 350px;
+    //     }
+    //     @include breakpoint(480px) {
+    //         display: none;
+    //     }
+    //     @include breakpoint($min: 640px, $max: 767px) {
+    //         text-align: center;
+    //         font-style: italic;
+    //     }
+    // }
+}
+
 /// Помощник для определения размера
 /// @author Hugo Giraudel
 /// @param {Length} $width
@@ -276,4 +375,79 @@
     @include optional-at-root('&::selection') {
         @content;
     }
+}
+
+/// @sectionName: -=[ align ]=-;
+/// @description: выравнивание объекта (лучше calc()).
+@mixin align($vertical: true, $horizontal: false, $position: relative) {
+	@if $position {
+		position: $position;
+	}
+
+	@if $vertical {
+		top: 50%;
+	}
+
+	@if $horizontal {
+		left: 50%;
+	}
+
+	@if $vertical and $horizontal {
+		transform: translateX(-50%) translateY(-50%);
+	} @else if $vertical {
+		transform: translateY(-50%);
+	} @else {
+		transform: translateX(-50%);
+	}
+}
+
+/* --- */
+/// @BemEntryName: -=[ rhombus ]=-.
+/// @description: ромб как фигура.
+@mixin rhombus ($rate) {
+    background-color: #fff;
+    @include bg-cover;
+    overflow: hidden;
+    padding: 10px;
+    transform-origin: 50% 50%;
+    transform: rotate($rate);
+}
+
+/// @BemEntryName: -=[ rhombus ]=-.
+/// @BemElementName: -=[ inner ]=-.
+/// @description: внутренний блок, для выравнивания поворота.
+/// @description: также служащий для обёртки, декоративного оформления.
+/// @require: $rate.
+@mixin rhombus__inner ($rate) {
+	overflow: hidden;
+    padding: 10px;
+    transform-origin: 50% 50%;
+    transform: rotate(-$rate);
+}
+
+/// @BemEntryName: -=[ rhombus ]=-.
+/// @BemElementName: -=[ inner ]=-.
+/// @BemElementModName: -=[ decorate ]=-.
+/// @BemElementModValue: -=[ form ]=-.
+/// @description: оформление для формы.
+@mixin rhombus__inner_decorate_form {
+	border-color: map-get($colors, "default");
+    border-style: solid;
+    border-width: 1px;
+}
+
+/// @BemEntryName: -=[ rhombus ]=-.
+/// @BemEntryModName: -=[ size ]=-.
+/// @BemEntryModValue: -=[ big ]=-.
+/// @description: большой ромб.
+@mixin rhombus_size_big {
+	@include size(400px);
+}
+
+/// @BemEntryName: -=[ rhombus ]=-.
+/// @BemEntryModName: -=[ size ]=-.
+/// @BemEntryModValue: -=[ normal ]=-.
+/// @description: большой ромб.
+@mixin rhombus_size_normal {
+    @include size(200px);
 }

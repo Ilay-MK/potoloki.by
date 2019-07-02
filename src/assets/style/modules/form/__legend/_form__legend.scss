@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+/// @BemEntryName: -=[ form ]=-.
+/// @BemElementName: -=[ legend ]=-.
+/// @description: легенда формы.
+.form__legend {
+
+    /*  */
+    &_sale {
+        margin: 0;
+    }
+
+}

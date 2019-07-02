@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+/// @BemEntryName: -=[ text-desc ]=-.
+/// @description: стиль текста - описание (description).
+.text-desc {
+    @extend .font_second;
+    @extend .font_color_second;
+}

@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+/// @BemEntryName: -=[ reasons ]=-.
+/// @BemElementName: -=[ benefits ]=-.
+/// @description: блок выгод.
+.reasons__benefits {
+    /*background-color: scotch-color("primary");*/
+    background-color: scotch-color-level("primary", 2);
+    /*background-color: scotch-color-alpha("primary", 'light');*/
+    color: white;
+}

@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+/// @BemEntryName: -=[ big-arrow ]=-.
+/// @BemElementName: -=[ img ]=-.
+/// @BemElementModName: -=[ revers ]=-.
+/// @require: $degRhombus.
+/// @description: выравнивание блока.
+.big-arrow__img_revers {
+    transform: rotate($degRhombus);
+}

@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+/// @BemEntryName: -=[ navbar-brand ]=-.
+/// @BemElementName: -=[ logo ]=-.
+/// @description: логотип.
+.navbar-brand__logo {
+    border-right-color: scotch-color-level('default', 6);
+    border-right-style: solid;
+    border-right-width: 1px;
+    display: inline-block !important;
+    float: left;
+    padding-right: 20px;
+    @include size(auto, 100%);
+
+    /// @name: -=[ breakpoint ]=-;
+    /// @description: ;
+    /// @prop: xs, sm, md, lg (bootstrap);
+    /// @prop: ($maxWidth: x, $minWidth: x, $maxHeight: x, $minHeight: x), где x - число с "px";
+    @include breakpoint(xs) {
+        border-right: 0;
+    }
+
+    /// @name: -=[ breakpoint ]=-;
+    /// @description: функция-помошник работы с медиа запросами (breakpoints);
+    /// @prop: xs, sm, md, lg (bootstrap);
+    /// @prop: ($maxWidth: x, $minWidth: x, $maxHeight: x, $minHeight: x), где x - число с "px";
+    @include breakpoint(sm) {
+    }
+}

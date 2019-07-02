@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+/// @BemEntryName: -=[ developer ]=-.
+/// @BemElementName: -=[ corporate-name ]=-.
+/// @description: название агенства/фирмы/корпорации/.
+.developer__corporate-name {
+    color: scotch-color-level('warning', 3);
+    /*display: inline-block;*/
+    font-family: Bristol;
+    font-size: 2em;
+    letter-spacing: 0.08em;
+    padding: 15px;
+    vertical-align: middle;
+}

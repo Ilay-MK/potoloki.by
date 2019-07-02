@@ -1,5 +1,14 @@
 @charset "UTF-8";
 
 #footer {
+    background-color: scotch-color-level('default', 9);
+    background-image: url(../img/footer/bg.png);
+    /*background-position: 0 100%;*/
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+}
 
+#gmap {
+    height: 400px;
 }

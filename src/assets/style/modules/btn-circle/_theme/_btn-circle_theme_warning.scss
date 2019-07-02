@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+/// @BemEntryName: -=[ btn-circle ]=-.
+/// @BemEntryModName: -=[ theme ]=-.
+/// @BemEntryModValue: -=[ warning ]=-.
+/// @description: мод warning (жёлтый фон)).
+.btn-circle_theme_warning {
+    color: map-get($colors, "base");
+    background-color: map-get($colors, "warning");
+}
+

@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+/// @BemEntryName: -=[ control-arrow ]=-.
+/// @BemEntryModName: -=[ right ]=-.
+/// @require: FontAwesome.
+/// @description: стрелка вправо.
+.control-arrow_right {
+
+    &:before {
+        content: "\f054";
+    }
+}

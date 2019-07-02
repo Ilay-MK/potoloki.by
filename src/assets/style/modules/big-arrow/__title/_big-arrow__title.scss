@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+/// @BemEntryName: -=[ big-arrow ]=-.
+/// @BemElementName: -=[ title ]=-.
+/// @description: заголовок-описание item (иконки / пункта).
+.big-arrow__title {
+    @extend .font_second;
+    line-height: 1em;
+    /*position: absolute;*/
+    text-transform: uppercase;
+}

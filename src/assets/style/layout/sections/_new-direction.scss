@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+/// @sectionName: -=[ new-direction ]=-.
+/// @description: секция нового направления в установке натяжных потолков.
+#new-direction {
+    background-color: scotch-color-level('default', 9);
+    background-image: url(../img/new-direction/bg.png);
+    /*background-position: 0 50%;
+    background-size: auto;*/
+    background-position-y: 0%;
+
+    .title__header {
+        font-size: 2.5em;
+
+        /// @name: -=[ breakpoint ]=-;
+        /// @description: функция-помошник работы с медиа запросами (breakpoints);
+        /// @prop: xs, sm, md, lg (bootstrap);
+        /// @prop: ($maxWidth: x, $minWidth: x, $maxHeight: x, $minHeight: x), где x - число с "px";
+        @include breakpoint(xs) {
+            font-size: 2.14286em;
+        }
+    }
+
+    /* переписать на Bem */
+    .lead-form-wrapper {
+        margin-top: 20px;
+    }
+
+    /* переписать на Bem */
+    .big-arrow {
+
+        &-sm {
+            margin-bottom: 15px;
+            margin-top: 15px;
+        }
+
+        &-md {
+            margin-left: -140px;
+            margin-top: 50px;
+        }
+        /*margin-top: 120px;*/
+        /*margin-top: 130px;*/ /* 170px */
+    }
+}

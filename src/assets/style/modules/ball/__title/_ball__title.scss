@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+/// @BemEntryName: -=[ ball ]=-.
+/// @BemElementName: -=[ title ]=-.
+/// @description: заголовок "шаров".
+.ball__title {
+    @extend .font_title; /* font-weight: 500; */
+}

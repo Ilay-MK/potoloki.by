@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+/// @BemEntryName: -=[ project ]=-.
+/// @BemElementName: -=[ title ]=-.
+/// @description: заголовок проекта.
+.project__title {
+    @extend .font_title;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    text-align: center;
+}

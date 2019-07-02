@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+/// @BemEntryName: -=[ lazy_load ]=-.
+/// @description: картинка с постзагрузкой.
+.lazy_load {
+    opacity: 0;
+    transition: opacity 150ms;
+
+    &.loaded {
+        opacity: 1;
+    }
+}

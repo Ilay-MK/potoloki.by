@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+/// @varName: -=[ advantage__imgCount ]=-.
+/// @description: количество картинок.
+$logoRhombusCount: 4;
+
+/// @BemEntryName: -=[ rhombus ]=-.
+/// @BemEntryModName: -=[ theme ]=-.
+/// @BemEntryModValue: -=[ logo ]=-.
+/// @description: мод темы цветов логотипа.
+.rhombus_theme_logo {
+    border-width: 1px ;
+    border-style: outset; /* outset | ridge */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/// @BemEntryModValue: -=[ 1..4 ]=-.
+/// @require: $logoRhombusCount.
+/// @require: $logo__colors.
+@for $i from 1 through $logoRhombusCount {
+    .rhombus_theme_logo-#{$i} {
+        background-color: map-get($logo__colors, #{$i});
+    }
+}

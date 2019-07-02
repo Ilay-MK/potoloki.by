@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+/// @BemEntryName: -=[ big-arrow ]=-.
+/// @BemElementName: -=[ title ]=-.
+/// @BemElementModName: -=[ revers ]=-.
+/// @require: $degRhombus.
+/// @description: выравнивание текста.
+.big-arrow__title_revers {
+    transform: rotate($degRhombus);
+}

@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+/// @BemEntryName: -=[ navbar-brand ]=-.
+/// @BemElementName: -=[ descript ]=-.
+/// @BemElementModName: -=[ mini ]=-.
+/// @description: мод navbar-brand__descript'a уменьшенный.
+.navbar-brand__descript_mini {
+    line-height: 0.9em;
+    margin-top: -4px;
+}

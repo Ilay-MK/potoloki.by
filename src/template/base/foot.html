@@ -1,7 +1,14 @@
     <!-- build:js js/vendor.js -->
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
+    <!-- "jquery": "1.9.1 - 3" -->
+    <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- Fancybox 3 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js"></script>
 
     <!-- bower:js -->
     <!-- endbower -->
@@ -12,8 +19,6 @@
     <!-- endbuild -->
 
     <script>
-
-        // Загрузка стилей
         function loadStyle(l) {
             var a = document.createElement("link");
             a.rel = "stylesheet";
@@ -22,49 +27,23 @@
             document.getElementsByTagName("head")[0].appendChild(a)
         }
 
-        // Загрузка скриптов
         function downloadJSAtOnload(l) {
             var element = document.createElement("script");
             element.src = l;
             document.getElementsByTagName("body")[0].appendChild(element)
         }
 
+        $(document).ready(function () {
+            /*loadStyle('css/main.css?v=0.0.1');*/
+            downloadJSAtOnload('assets/js/main.js?v=0.3.2');
+        });
     </script>
 
-    <script>
-
-        var map;
-        var markers = [], marker;
-
-        function initMap() {
-            map = new google.maps.Map(document.getElementById('gmap'), {
-                zoom: 17,
-                center: {lat: 53.911619, lng: 27.576343},
-                disableDefaultUI: true,
-                scrollwheel: false
-            });
-            /* 53.911619, 27.579647 */
-            /*var image = './assets/img/map/marker.png';*/
-            /*marker = new google.maps.Marker({
-                map: map,
-                draggable: true,
-                animation: google.maps.Animation.DROP,
-                position: {
-                    lat: 53.911619,
-                    lng: 27.579647
-                },
-                icon: image
-            });*/
-        }
-    </script>
-
+    <!-- MAPS -->
+    <!-- GMAP -->
     <!-- API GOOGLE MAP -->
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2a-rr7rqpb2ePaUWBoF856gWo8rpIFDE&callback=initMap"></script>
+    <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZ1vRu9j-Rq--7LHE9LjRNNGe0mfHMk9A"></script>
+    <script defer src="assets/js/map.js"></script>
+</body>
 
-    <!-- Yandex.Metrika counter -->
-
-    <!-- /Yandex.Metrika counter -->
-
-    <!-- Google.Analytics counter -->
-
-    <!-- /Google.Analytics counter -->
+</html>

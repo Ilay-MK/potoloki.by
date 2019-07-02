@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+/// @BemEntryName: -=[ reviews ]=-.
+/// @BemElementName: -=[ media ]=-.
+/// @description: блок заголовка медиа контента (фото/видео) отзыва.
+.reviews__media {
+    display: inline-block;
+    height: 100px;
+    margin: 15px 15px 15px 0; /* верхний отступ для центрирования текста по вертикали */
+    overflow: hidden;
+    vertical-align: middle;
+}

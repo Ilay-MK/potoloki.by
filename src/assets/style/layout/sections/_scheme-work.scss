@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+/// @sectionName: -=[ scheme-work ]=-.
+/// @description: схема работы.
+#scheme-work {
+    background-color: scotch-color-level('default', 9);
+    background-image: url(../img/scheme-work/bg.jpg);
+    position: relative;
+
+    /* переписать по BEM */
+    .lead-form-wrapper {
+        margin-bottom: -185px;
+        margin-top: 50px;
+    }
+
+}

@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+/// @BemEntryName: -=[ big-arrow ]=-.
+/// @BemElementName: -=[ item ]=-.
+/// @require: $sizeMarginElemRhombusBigArrow.
+/// @require: $sizeRhombusElem.
+/// @description: элемент большой стрелки - ромбики.
+.big-arrow__item {
+    float: left;
+    overflow: hidden;
+    margin: $sizeMarginElemRhombusBigArrow;
+    position: relative;
+    @include size($sizeRhombusElem);
+}

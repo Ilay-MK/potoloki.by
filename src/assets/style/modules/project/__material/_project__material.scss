@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+/// @BemEntryName: -=[ project ]=-.
+/// @BemElementName: -=[ material ]=-.
+/// @description: пункт описания проекта - материал.
+.project__material {
+    @extend .font_color_second;
+    font-size: 85%;
+    text-align: left;
+}

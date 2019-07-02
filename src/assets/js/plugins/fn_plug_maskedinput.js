@@ -1,13 +1,13 @@
 "use strict";
 
-/// -=[ fn_plug_maskedinput ]=-.
-/// Маска ввода телефона.
-/// @access public.
-/// @type function.
-/// @prop - target {string} - объект, к которому применяется данная функция
+/// @name: -=[ fn_plug_maskedinput ]=-.
+/// @description: Маска ввода телефона.
+/// @require: jQuery.
+/// @require: jquery.maskedinput.min.js^1.4.1.
+/// @type: function.
+/// @prop: target {string} - объект, к которому применяется данная функция
 /// (класс, идентификатор или селектор).
-/// (класс, идентификатор или селектор input'а).
-/// @return empty.
+/// @return: none.
 
 var fn_plug_maskedinput = function (target) {
 

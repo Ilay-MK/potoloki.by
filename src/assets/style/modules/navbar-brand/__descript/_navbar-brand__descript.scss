@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+/// @BemEntryName: -=[ navbar-brand ]=-.
+/// @BemElementName: -=[ descript ]=-.
+/// @description: дескрипт.
+.navbar-brand__descript {
+    display: inline-block;
+    font-size: $font-size-base * 0.80;
+    line-height: normal;
+    max-width: 225px; /* 260px | 240px | 340px */
+    padding: 5px 0 5px 20px;
+    margin-top: -8px;
+    text-align: left;
+    vertical-align: middle;
+}

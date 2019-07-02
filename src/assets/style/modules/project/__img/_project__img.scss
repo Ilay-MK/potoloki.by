@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+/// @BemEntryName: -=[ project ]=-.
+/// @BemElementName: -=[ img ]=-.
+/// @description: блок фотографий или фотка проекта.
+.project__img {
+    border-radius: 6px;
+    overflow: hidden;
+    @include size(100%, auto);
+}

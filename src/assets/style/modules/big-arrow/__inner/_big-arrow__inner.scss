@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+/// @BemEntryName: -=[ big-arrow ]=-.
+/// @BemElementName: -=[ inner ]=-.
+/// @require: $degRhombus.
+/// @require: $sizeRhombusBigArrow.
+/// @require: $sizeDiagonalRhombusBigArrow.
+/// @description: элеммент - внутренний блок.
+/// @description: большая стрелка из ромбов-картинок.
+.big-arrow__inner {
+    left: 0;
+    margin-left: ($sizeDiagonalRhombusBigArrow - $sizeRhombusBigArrow) / 2;
+    margin-top: ($sizeDiagonalRhombusBigArrow - $sizeRhombusBigArrow) / 2;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    @include size($sizeRhombusBigArrow);
+    transform: rotate($degRhombus);
+    @include transition();
+}

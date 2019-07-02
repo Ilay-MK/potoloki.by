@@ -3,6 +3,7 @@
     header('Content-Type: text/html; charset= utf-8');
 
     $error = false;
+    $email = "";
 
     /* Объявление переменной с какой секции заявка */
     $whichService = "";
@@ -14,6 +15,12 @@
 
     if (!empty($_POST["bsName"])) {
         $name = substr(htmlspecialchars(trim($_POST["bsName"])), 0, 250);
+    } /*else {
+        $error = true;
+    }*/
+
+    if (!empty($_POST["bsEmail"])) {
+        $email = substr(htmlspecialchars(trim($_POST["bsEmail"])), 0, 255);
     } /*else {
         $error = true;
     }*/
@@ -48,11 +55,18 @@
     /* -------------------------- */
 
     if (!$error) {
-        $recepient = "MiKrob09@gmail.com";
+        $recepient = "client@potoloki.by";
         $sitename  = "potoloki.by";
         $pagetitle = "Новая заявка с сайта \"$sitename\"";
 
-        $message   = "Телефон: $phone \n\nКуда кликнул: $whichService $utm_source__value $utm_term__value";
+        $message   = "
+                      Имя: $name \n
+                      Телефон: $phone \n
+                      Email: $email \n\n
+                      Куда кликнул: $whichService \n\n
+                      $utm_source__value \n
+                      $utm_term__value
+                     ";
 
         mail($recepient, $pagetitle, $message, "Content-type: text/plain; charset=\"utf-8\"\n From: $recepient");
     } else {

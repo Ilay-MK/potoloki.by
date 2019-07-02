@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+/// @BemEntryName: -=[ type-ceiling ]=-.
+/// @BemElementName: -=[ img-link ]=-.
+/// @description: линк картинки во весь размер.
+.type-ceiling__img-link {
+    display: block;
+    max-height: 215px;
+
+    /* переписать по BEM */
+    img {
+        margin: 0 auto;
+        /*width: 100%;*/
+    }
+}

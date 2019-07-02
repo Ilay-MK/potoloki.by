@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+/// @identifiername: -=[ types-ceilings ]=-.
+/// @description: типы потолков.
+#types-ceilings {
+    /*background-color: #fff;*/
+    background-color: scotch-color-level('default', 9);
+    background-image: url(../img/types-ceilings/bg.png);
+    /*background-position: 100% 50%;
+    background-size: auto;*/
+    background-position-y: 100%;
+
+    /* Переписать по Bem */
+    .carousel-control {
+        /*@extend .control-arrow_theme_base;*/
+
+        &:hover {
+            color: scotch-color("warning");
+        }
+    }
+}

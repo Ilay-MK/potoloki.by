@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+/// @varName: -=[ $sizeRhombusElem ]=-.
+/// @description: значение размера ромба-картинки* (размер элемента).
+$sizeRhombusElem: 150px;
+
+/// @varName: -=[ $sizeMarginElemRhombusBigArrow ]=-.
+/// @description: значение отступов между ромбов-картинок в большой стрелке.
+$sizeMarginElemRhombusBigArrow: 4px;
+
+/// @varName: -=[ $sizeRhombusBigArrow ]=-.
+/// @description: значение размера большой стрелки, состоящей из ромбов-картинок.
+$sizeRhombusBigArrow: $sizeRhombusElem*3 + $sizeMarginElemRhombusBigArrow*6;
+
+/// @varName: -=[ $sizeRhombusBigArrow ]=-.
+/// @description: значение размера дагонали большой стрелки (квадрата).
+$sizeDiagonalRhombusBigArrow: $sizeRhombusBigArrow * sqrt(2);
+
+/// @BemEntryName: -=[ big-arrow ]=-.
+/// @require: npm modul mathsass (sqrt).
+/// @require: $sizeDiagonalRhombusBigArrow.
+/// @description: большая стрелка.
+.big-arrow {
+    overflow: hidden;
+    position: relative;
+    @include size($sizeDiagonalRhombusBigArrow *2/3, $sizeDiagonalRhombusBigArrow);
+}

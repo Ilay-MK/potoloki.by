@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+/// @BemEntryName: -=[ navbar ]=-.
+/// @BemElementName: -=[ order-call ]=-.
+/// @description: элемент навбара - кнопка заказать звонок.
+.navbar__order-call {
+    padding: 14px 15px; /* -1px вертикали из-за 1px border */
+    text-decoration: underline;
+}
